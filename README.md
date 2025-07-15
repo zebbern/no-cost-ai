@@ -34,17 +34,18 @@
 | Service | Free Multimodel Access | Link |
 | :--- | :--- | :--- |
 | **LMSYS Chatbot Arena** | Free access to top language models such as `Claude 4 Opus`, `Grok 4` etc.. Almost all big models | [lmarena.ai](https://lmarena.ai/) |
+| **Poe by Quora** | Daily "points" to access a variety of models, including `Claude 4 Sonnet` and `GPT-o3` etc.. | [poe.com](https://poe.com/) |
+
 
 <br>
 
 | Service | Free Tier Access & Models | Link |
 | :--- | :--- | :--- |
 | **ChatGPT** | Unlimited access to `GPT-3.5`. Limited access to `GPT-4o` with daily caps. | [chatgpt.com](https://chatgpt.com/) |
-| **Claude** | Free access to `Claude 3.5 Sonnet`. Message limits reset every few hours. | [claude.ai](https://claude.ai/) |
-| **Google Gemini** | Free access to `Gemini 1.5 Pro` with a 1 million token context window. | [gemini.google.com](https://gemini.google.com/) |
-| **Microsoft Copilot** | Free access to `GPT-4o` and other OpenAI models, integrated with Bing Search. | [copilot.microsoft.com](https://copilot.microsoft.com/) |
-| **Groq Web UI** | Free, high-speed access to open models like `Llama 3`, `Mixtral`, and `Gemma`. | [groq.com](https://groq.com/) |
-| **Poe by Quora** | Daily "points" to access a variety of models, including `Claude 3.5 Sonnet` and `GPT-4o`. | [poe.com](https://poe.com/) |
+| **Claude** | Access to `Claude 3.5 Sonnet`. Message limits reset every few hours. | [claude.ai](https://claude.ai/) |
+| **Google Gemini** | Access to `Gemini 1.5 Pro` with a 1 million token context window. | [gemini.google.com](https://gemini.google.com/) |
+| **Microsoft Copilot** | Access to `GPT-4o` and other OpenAI models, integrated with Bing Search. | [copilot.microsoft.com](https://copilot.microsoft.com/) |
+| **Groq Web UI** | Access to open models like `Llama 3`, `Mixtral`, and `Gemma`. | [groq.com](https://groq.com/) |
 | **Meta AI** | Free access to the `Llama` model, integrated with real-time search results. | [www.meta.ai](https://www.meta.ai/) |
 | **Mistral Le Chat** | Free access to Mistral's models, including `Mistral` and `Codestral`. | [chat.mistral.ai](https://chat.mistral.ai/) |
 | **Perplexity** | Free access to an answer engine powered by models like `Llama`. | [perplexity.ai](https://perplexity.ai/) |
