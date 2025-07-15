@@ -17,7 +17,7 @@
 | Platform | Scope | Link |
 | --- | --- | --- |
 | **AlpacaEval** | Instruction‑following ability vs GPT‑4 | <https://tatsu-lab.github.io/alpaca_eval/> |
-| **Hugging Face – Open LLM Leaderboard** | Cross‑domain evals on >4 k open‑source LLMs | <https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard> |
+| **Hugging Face Open LLM Leaderboard** | Cross‑domain evals on >4 k open‑source LLMs | <https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard> |
 | **Chatbot Arena Leaderboard** | Crowd‑sourced Elo ranking of chat models | <https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard> |
 | **MTEB Embedding Leaderboard** | 100 + languages, 1000 + NLP tasks | <https://huggingface.co/spaces/mteb/leaderboard> |
 
@@ -32,8 +32,8 @@
 | **Quora Poe** | Daily points resets every 24h free `o3`, `Claude 4 opus`, `Grok 4` etc.. | <https://poe.com> |
 |**Qwen3-235B-A22B**| Free Qwen3 235b Usage no signup|[chat.qwen.ai](https://chat.qwen.ai/)
 |**o3 Pro**| Free `o3 pro` and `all chatgpt + usage` requires generating seed token | [sharedchat.cn](https://sharedchat.cn)
-| **OpenRouter Playground** | Dozens of `free` models (e.g., DeepSeek‑R1, Cypher‑Alpha) — up to 50 free requests/day | <https://openrouter.ai/playground> |
-| **HuggingChat** | Open‑source UI with 30 + OSS models (`Llama 3`, `Mistral‑7B`, …); no login required | <https://huggingface.co/chat/> |
+| **OpenRouter Playground** | Dozens of `free` models (e.g., DeepSeek‑R1, Cypher‑Alpha) up to 50 free requests/day | <https://openrouter.ai/playground> |
+| **HuggingChat** | Open‑source UI with 30 + OSS models (`Llama 3`, `Mistral‑7B` etc..); no login required | <https://huggingface.co/chat/> |
 
 
 
