@@ -1,37 +1,92 @@
-## List of No-Cost Generative AI Tools
+<div align="center">
 
-A centralized and structured list of publicly accessible, no-cost AI chatbots and language model interfaces. This list is intended for developers, researchers, and enthusiasts.
+### List of No-Cost Generative AI Tools
+###### This list is intended for developers, researchers, and enthusiasts, with a focus on providing free options for others.
 
-## AI Chatbots & Language Interfaces
-| Service | Free Access Model / Limitations | Link |
+![Free-AI](https://img.shields.io/badge/Free--AI-List-blue)
+![Status](https://img.shields.io/badge/Status-Active-green)
+![License](https://img.shields.io/badge/License-MIT-brightgreen)
+ 
+**[AI Model Leaderboards](#ai-model-leaderboards)**
+
+**[AI Chat Interfaces](#ai-chat-interfaces)**
+
+**[Generative Media Platforms (Image, Video, Audio)](#generative-media-platforms-image-video-audio)**
+
+**[Developer APIs & Platforms](#developer-apis--platforms)**
+
+**[Contributing](#contributing)**
+
+</div>
+
+
+## AI Model Leaderboards
+
+| Platform | LLM Leaderboard | Link |
 | :--- | :--- | :--- |
-| **LMSYS Chatbot Arena** | Free, anonymous side-by-side model comparison. | [lmarena.ai](https://lmarena.ai/) |
-| **ChatGPT** | Unlimited access to the GPT-3.5 model.  | [chatgpt.com](https://chatgpt.com/) |
-| **Poe** | Daily free "points" that reset every 24 hours to use on various models.  | [poe.com](https://poe.com/) |
-| **Claude** | Free tier has a message limit that resets every few hours.  | [claude.ai](https://claude.ai/) |
-| **Google Gemini** | Free access to the standard Gemini model. Requires a Google account. | [gemini.google.com](https://gemini.google.com/) |
-| **Microsoft Copilot** | Free access to models like GPT-4o with high usage limits. Requires a Microsoft account. | [copilot.microsoft.com](https://copilot.microsoft.com/) |
-| **Perplexity** | Core search and chat functionality is free. Pro version has higher limits. | [perplexity.ai](https://perplexity.ai/) |
-| **Hugging Face Chat** | Free access to a wide variety of open-source models.  | [huggingface.co/chat/](https://huggingface.co/chat/) |
-| **Mistral Le Chat** | Free access to Mistral's models with certain daily limits.  | [chat.mistral.ai](https://chat.mistral.ai/) |
-| **DeepSeek** | Generous free tier for their powerful chat model.  | [chat.deepseek.com](https://chat.deepseek.com/) |
-| **Meta AI** | Free to use with the Llama 4 model.  | [www.meta.ai](https://www.meta.ai/) |
-| **Character.AI** | Free tier is ad-supported and may have wait times. | [character.ai](https://character.ai/) |
-| **DeepAI** | Basic free chat service with limited functionality. | [deepai.org/chat](https://deepai.org/chat) |
+| **Hugging Face Open LLM Leaderboard** | Free access to view rankings and detailed evaluations of numerous open-source models based on key benchmarks. | [huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) |
+| **AlpacaEval Leaderboard** | Free access to a leaderboard that ranks language models based on their instruction-following ability, benchmarked against `GPT-4`. | [tatsu-lab.github.io/alpaca_eval/](https://tatsu-lab.github.io/alpaca_eval/) |
 
-## Free API Usage for Developers
+---
 
-This section focuses on platforms offering a free tier for API access, allowing developers to build and test applications. Limits are often based on tokens (TPM/TPD: Tokens Per Minute/Day) or requests (RPM/RPD: Requests Per Minute/Day).
+## AI Chat Interfaces
 
-| Platform / API | Free Tier Models & Limitations | Link |
+| Service | Free Multimodel Access | Link |
 | :--- | :--- | :--- |
-| **Google AI (Gemini API)** | **Models:** `Gemini 1.5 Flash`, `Gemma` models.<br>**Limits:** Offers a free tier with rate limits (e.g., 60 RPM) suitable for development and testing via Google AI Studio. | [ai.google.dev](https://ai.google.dev) |
-| **OpenAI API** | **Models:** Does not offer a persistent free model tier. New accounts receive free credits that expire.<br>**Limits:** Subject to usage tiers; initial limits are low and increase with spending. | [platform.openai.com](https://platform.openai.com) |
-| **Anthropic (Claude API)** | **Models:** Provides some free credits for new accounts to test `Haiku`, `Sonnet`, and `Opus` models.<br>**Limits:** After credits are used, it becomes a pay-as-you-go service. | [anthropic.com/api](https://www.anthropic.com/api) |
-| **DeepSeek API** | **Models:** `deepseek-chat`, `deepseek-coder`.<br>**Limits:** Offers a free tier with 1M free tokens. Sign-up required. | [platform.deepseek.com](https://platform.deepseek.com) |
-| **Mistral API** | **Models:** No explicit free tier for API access; operates on a pay-as-you-go basis. Trial credits may be available upon sign-up.<br>**Limits:** N/A | [mistral.ai/api](https://mistral.ai/api) |
-| **Google Cloud (Vertex AI)** | **Models:** Access to various Google and open-source models.<br>**Limits:** New customers get $300 in free credits. Includes an "always-free" tier with monthly limits on select services (e.g., Natural Language API). | [cloud.google.com/vertex-ai](https://cloud.google.com/vertex-ai) |
-| **Hugging Face** | **Models:** Access to thousands of open-source models.<br>**Limits:** Provides free monthly credits for inference. PRO users and orgs get more. Pay-as-you-go after credits are used. | [huggingface.co/inference-api](https://huggingface.co/inference-api) |
+| **LMSYS Chatbot Arena** | Free access to top language models such as `Claude 4 Opus`, `Grok 4` etc.. Almost all big models | [lmarena.ai](https://lmarena.ai/) |
+
+<br>
+
+| Service | Free Tier Access & Models | Link |
+| :--- | :--- | :--- |
+| **ChatGPT** | Unlimited access to `GPT-3.5`. Limited access to `GPT-4o` with daily caps. | [chatgpt.com](https://chatgpt.com/) |
+| **Claude** | Free access to `Claude 3.5 Sonnet`. Message limits reset every few hours. | [claude.ai](https://claude.ai/) |
+| **Google Gemini** | Free access to `Gemini 1.5 Pro` with a 1 million token context window. | [gemini.google.com](https://gemini.google.com/) |
+| **Microsoft Copilot** | Free access to `GPT-4o` and other OpenAI models, integrated with Bing Search. | [copilot.microsoft.com](https://copilot.microsoft.com/) |
+| **Groq Web UI** | Free, high-speed access to open models like `Llama 3`, `Mixtral`, and `Gemma`. | [groq.com](https://groq.com/) |
+| **Poe by Quora** | Daily "points" to access a variety of models, including `Claude 3.5 Sonnet` and `GPT-4o`. | [poe.com](https://poe.com/) |
+| **Meta AI** | Free access to the `Llama` model, integrated with real-time search results. | [www.meta.ai](https://www.meta.ai/) |
+| **Mistral Le Chat** | Free access to Mistral's models, including `Mistral` and `Codestral`. | [chat.mistral.ai](https://chat.mistral.ai/) |
+| **Perplexity** | Free access to an answer engine powered by models like `Llama`. | [perplexity.ai](https://perplexity.ai/) |
+| **xAI's Grok** | Free access to the base Grok model is available to all X (formerly Twitter) users. | [x.ai/grok](https://x.ai/grok) |
+| **DeepSeek** | Free access to the `DeepSeek` chat model. | [chat.deepseek.com](https://chat.deepseek.com/) |
+| **Phind** | Free access to an AI search engine for developers, powered by its own model. | [www.phind.com](https://www.phind.com) |
+
+---
+
+## Generative Media Platforms (Image, Video, Audio)
+
+| Platform | Free No Signup Required | Link |
+| :--- | :--- | :--- |
+| **Microsoft Designer** | Free "boost" credits for fast image generation with `DALL-E 3`. | [designer.microsoft.com](https://designer.microsoft.com) |
+
+<br>
+
+| Platform | Free Signup Required | Link |
+| :--- | :--- | :--- |
+| **Leonardo.Ai** | Daily free tokens for image generation using their proprietary models. | [leonardo.ai](https://leonardo.ai) |
+| **Adobe Firefly** | Monthly generative credits for use with the `Firefly Image 3` model. | [firefly.adobe.com](https://firefly.adobe.com) |
+| **Midjourney** | Occasional, limited-time free trials on their Discord server. | [www.midjourney.com](https://www.midjourney.com) |
+| **RunwayML** | Initial free credits for generating video clips with models like `Gen-3 Alpha`. | [runwayml.com](https://runwayml.com) |
+| **Pika** | Free tier with credits to generate watermarked videos. | [pika.art](https://pika.art) |
+| **Suno** | Daily free credits to generate full songs with lyrics and vocals. | [suno.com](https://suno.com) |
+| **Udio** | Free tier with monthly credits for generating music. | [www.udio.com](https://www.udio.com) |
+
+---
+
+## Developer APIs & Platforms
+
+| Platform / API | Free Tier Access & Models | Link |
+| :--- | :--- | :--- |
+| **Groq API** | Very generous free tier for `Llama 3`, `Mixtral`, and `Gemma` with high rate limits. | [console.groq.com](https://console.groq.com) |
+| **Google AI (Gemini API)**| Free tier for `Gemini 1.5 Flash` and `Gemma` with a 60 RPM (requests per minute) rate limit. | [ai.google.dev](https://ai.google.dev) |
+| **DeepSeek API** | 1 million free tokens for `DeepSeek-V2` (Chat and Coder models). | [platform.deepseek.com](https://platform.deepseek.com) |
+| **Together.ai** | Provides $25 in free starting credits for testing a wide variety of open-source models. | [www.together.ai](https://www.together.ai) |
+| **Replicate** | New accounts receive some free credits to test a vast library of models. | [replicate.com](https://replicate.com) |
+| **Anthropic API** | New accounts receive free credits (e.g., $5) to test `Claude` models. | [www.anthropic.com/api](https://www.anthropic.com/api) |
+| **OpenAI API** | New accounts receive free credits that expire after a set period. | [platform.openai.com](https://platform.openai.com) |
+
+
 
 ---
 
