@@ -7,7 +7,7 @@
 ![Status](https://img.shields.io/badge/Status-Active-green)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
 
-**[Leaderboards](#leaderboards)** | **[Chat Interfaces](#chat--interfaces)** | **[Media Generation](#media-generation-image‑video‑audio)** | **[Voice & Music](#voice--music)** | **[Developer APIs](#developer-apis)** | **[Contributing](#contributing)**
+**[Leaderboards](#leaderboards)** | **[Chat Interfaces](#chat-interfaces)** | **[Media Generation](#media-generation-image-video-audio)** | **[Voice & Music](#voice-music)** | **[Developer APIs](#developer-apis)** | **[Contributing](#contributing)**
 
 </div>
 
@@ -28,9 +28,10 @@
 ### “Battle‑style” or multi‑model playgrounds  
 | Service | Free Access Highlights | Link |
 | --- | --- | --- |
-| **LMSYS Chatbot Arena** | Blind pairwise battles against 40 + models | <https://lmsys.org/arena/> |
-| **Quora Poe** | Daily points; choose among GPT‑o3, Claude 3.5, Grok 2 etc. | <https://poe.com> |
+| **LMSYS Chatbot Arena** | Free `Claude 4 sonnet/opus`, `Grok 4`, `o3`, `Gemini 2.5 Pro` etc.. 40 + models | <https://lmsys.org/arena/> |
+| **Quora Poe** | Daily points resets every 24h free `o3`, `Claude 4 opus`, `Grok 4` etc.. | <https://poe.com> |
 |**Qwen3-235B-A22B**| Free Qwen3 235b Usage no signup|[chat.qwen.ai](https://chat.qwen.ai/)
+|**o3 Pro**| Free `o3 pro` and `all chatgpt + usage` no signup | [sharedchat.cn](https://sharedchat.cn)
 
 
 ### Single‑model portals  
