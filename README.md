@@ -35,6 +35,7 @@
 | :--- | :--- | :--- |
 | **LMSYS Chatbot Arena** | Free access to top language models such as `Claude 4 Opus`, `Grok 4` etc.. Almost all big models | [lmarena.ai](https://lmarena.ai/) |
 | **Poe by Quora** | Daily "points" to access a variety of models, including `Claude 4 Sonnet` and `GPT-o3` etc.. | [poe.com](https://poe.com/) |
+|**Qwen3-235B-A22B**| Free Qwen3 235b Usage no signup|[chat.qwen.ai](https://chat.qwen.ai/)
 
 
 <br>
