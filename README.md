@@ -1,13 +1,13 @@
 <div align="center">
 
 ## List of No-Cost Generative AI Tools
-##### A living index for developers, researchers & curious builders   — contributions welcome!
+##### A living index for developers, researchers & curious builders contributions is welcome & appriciated!
 
 ![Free‑AI](https://img.shields.io/badge/Free--AI-List-blue)
 ![Status](https://img.shields.io/badge/Status-Active-green)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
 
-**[Leaderboards](#leaderboards)** | **[Chat Interfaces](#chat-interfaces)** | **[Media Generation](#media-generation-image-video-audio)** | **[Voice & Music](#voice-music)** | **[Developer APIs](#developer-apis)** | **[Contributing](#contributing)**
+**[Leaderboards](#leaderboards)** | **[Chat Interfaces](#chat-interfaces)** | **[Media Generation](#media-generation-image-video-multimodal)** | **[Voice & Music](#voice--music)** | **[Developer APIs](#developer-apis--platforms)** | **[Contributing](#contributing)**
 
 </div>
 
