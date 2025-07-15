@@ -54,6 +54,8 @@
 | **Phind** | Developer‑centric search with Phind‑70B | <https://www.phind.com> |
 | **ChatSonic** | 25 – 50 free generations/day (GPT‑4o & real‑time Google search) | <https://writesonic.com/chat> |
 | **Character.AI** | Unlimited chat & voice calls with millions of user‑made characters | <https://character.ai> |
+| **Pi.ai** | Unlimited personal‑assistant style conversations | <https://pi.ai> |
+
 
 
 ---
@@ -78,6 +80,9 @@
 | **Udio** | 300 music credits/mo | |
 | **Playground AI** | Up to 1 000 images/day | Uses SDXL & DALL‑E 2 |
 | **Mage.space** | Unlimited image/video generations | No watermark, multiple SD models |
+| **Bing Image Creator** | Unlimited DALL·E 3 images (standard speed) for any Microsoft Account | <https://www.bing.com/images/create> |
+| **Ideogram** | 10 free credits per week | <https://ideogram.ai> |
+| **Genmo AI** | 2 watermark‑free videos/day (~30 / mo) | <https://www.genmo.ai> |
 
 ---
 
@@ -89,6 +94,8 @@
 | **Stable Audio 2.0** | 20 two‑minute tracks/day | <https://stableaudio.com> |
 | **PlayHT** | 12 500 characters/month TTS + low‑latency API | <https://play.ht> |
 | **Riffusion** | Unlimited text‑to‑music song generation | <https://www.riffusion.com> |
+| **Uberduck** | 300 renders (~5 min audio) free/month; TTS & voice cloning | <https://www.uberduck.ai> |
+
 
 
 ---
@@ -109,6 +116,9 @@
 | **Fireworks AI** | “Developer” tier free; start with $1 promo credit & open‑model library | <https://fireworks.ai> |
 | **IBM watsonx.ai** | Free tier: 50 000 inference tokens + 20 C‑hour training/month | <https://www.ibm.com/products/watsonx-ai> |
 | **HuggingChat** | Open‑source UI with 30 + OSS models (`Llama 3`, `Mistral‑7B` etc..) | <https://huggingface.co/models> |
+| **Vercel AI SDK** | Open‑source TypeScript SDK & gateway to 100 + models — fully free | <https://ai-sdk.dev> |
+| **Ollama** | Free local LLM runtime & OpenAI‑compatible REST API; run Llama 3, Gemma, etc. offline | <https://ollama.com> |
+
 
 
 
