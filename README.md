@@ -58,7 +58,7 @@
 
 | Platform | Free No Signup Required | Link |
 | :--- | :--- | :--- |
-| **Microsoft Designer** | Free "boost" credits for fast image generation with `DALL-E 3`. | [designer.microsoft.com](https://designer.microsoft.com) |
+| **Microsoft Designer** | Free edit images etc.. | [designer.microsoft.com](https://designer.microsoft.com) |
 
 <br>
 
