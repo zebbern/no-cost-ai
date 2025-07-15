@@ -32,6 +32,8 @@
 | **Quora Poe** | Daily points resets every 24h free `o3`, `Claude 4 opus`, `Grok 4` etc.. | <https://poe.com> |
 |**Qwen3-235B-A22B**| Free Qwen3 235b Usage no signup|[chat.qwen.ai](https://chat.qwen.ai/)
 |**o3 Pro**| Free `o3 pro` and `all chatgpt + usage` requires generating seed token | [sharedchat.cn](https://sharedchat.cn)
+| **OpenRouter Playground** | Dozens of `free` models (e.g., DeepSeek‑R1, Cypher‑Alpha) — up to 50 free requests/day | <https://openrouter.ai/playground> |
+
 
 
 ### Single‑model portals  
@@ -48,6 +50,9 @@
 | **xAI Grok (base)** | `Grok‑2` free for all X users; higher models require Premium | <https://x.ai/grok> |
 | **DeepSeek Chat** | `DeepSeek‑V2‑Chat` | <https://chat.deepseek.com> |
 | **Phind** | Developer‑centric search with Phind‑70B | <https://www.phind.com> |
+| **ChatSonic** | 25 – 50 free generations/day (GPT‑4o & real‑time Google search) | <https://writesonic.com/chat> |
+| **Character.AI** | Unlimited chat & voice calls with millions of user‑made characters | <https://character.ai> |
+
 
 ---
 
@@ -67,6 +72,8 @@
 | **Clipdrop** | Unlimited SD 3.5 1 MP images (low‑res) | |
 | **DreamStudio** | 25 promo credits on new sign‑up | SD 3 Medium & SDXL |
 | **Udio** | 300 music credits/mo | |
+| **Krea AI** | Open‑beta access; daily free image credits for “Krea 1” photoreal model | <https://www.krea.ai> |
+| **PixVerse AI** | 90 initial + 60 daily video credits (browser & mobile) | <https://app.pixverse.ai> |
 
 ---
 
@@ -76,6 +83,8 @@
 | --- | --- | --- |
 | **ElevenLabs** | 10 000 characters/month TTS/STT | <https://elevenlabs.io> |
 | **Stable Audio 2.0** | 20 two‑minute tracks/day | <https://stableaudio.com> |
+| **PlayHT** | 12 500 characters/month TTS + low‑latency API | <https://play.ht> |
+
 ---
 
 ## Developer APIs & Platforms
@@ -89,6 +98,10 @@
 | **Replicate** | New accounts receive some free credits to test a vast library of models. | [replicate.com](https://replicate.com) |
 | **Anthropic API** | New accounts receive free credits (e.g., $5) to test `Claude` models. | [www.anthropic.com/api](https://www.anthropic.com/api) |
 | **OpenAI API** | New accounts receive free credits that expire after a set period. | [platform.openai.com](https://platform.openai.com) |
+| **OpenRouter API** | Multiple `free` LLMs up to 50 calls/day without credits | <https://openrouter.ai/docs> |
+| **Cloudflare Workers AI** | 10 000 “Neurons” (inference units) per day on Free plan | <https://developers.cloudflare.com/workers-ai> |
+| **Fireworks AI** | “Developer” tier free; start with $1 promo credit & open‑model library | <https://fireworks.ai> |
+
 
 
 
