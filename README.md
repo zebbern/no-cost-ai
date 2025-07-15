@@ -33,6 +33,8 @@
 |**Qwen3-235B-A22B**| Free Qwen3 235b Usage no signup|[chat.qwen.ai](https://chat.qwen.ai/)
 |**o3 Pro**| Free `o3 pro` and `all chatgpt + usage` requires generating seed token | [sharedchat.cn](https://sharedchat.cn)
 | **OpenRouter Playground** | Dozens of `free` models (e.g., DeepSeek‑R1, Cypher‑Alpha) — up to 50 free requests/day | <https://openrouter.ai/playground> |
+| **HuggingChat** | Open‑source UI with 30 + OSS models (`Llama 3`, `Mistral‑7B`, …); no login required | <https://huggingface.co/chat/> |
+
 
 
 
@@ -68,12 +70,14 @@
 | **Pika** | Water‑marked HD clips; 30 credits/day  | [pika.art](https://pika.art) |
 | **Suno** | 10 songs/day (water‑marked) | [suno.com](https://suno.com) |
 | **Udio** | Free tier with monthly credits for generating music. | [www.udio.com](https://www.udio.com) |
+| **Krea AI** | Open‑beta access; daily free image credits for “Krea 1” photoreal model | <https://www.krea.ai> |
+| **PixVerse AI** | 90 initial + 60 daily video credits (browser & mobile) | <https://app.pixverse.ai> |
 | **NightCafe** | 5 free credits daily | SDXL & community challenges |
 | **Clipdrop** | Unlimited SD 3.5 1 MP images (low‑res) | |
 | **DreamStudio** | 25 promo credits on new sign‑up | SD 3 Medium & SDXL |
 | **Udio** | 300 music credits/mo | |
-| **Krea AI** | Open‑beta access; daily free image credits for “Krea 1” photoreal model | <https://www.krea.ai> |
-| **PixVerse AI** | 90 initial + 60 daily video credits (browser & mobile) | <https://app.pixverse.ai> |
+| **Playground AI** | Up to 1 000 images/day | Uses SDXL & DALL‑E 2 |
+| **Mage.space** | Unlimited image/video generations | No watermark, multiple SD models |
 
 ---
 
@@ -84,6 +88,8 @@
 | **ElevenLabs** | 10 000 characters/month TTS/STT | <https://elevenlabs.io> |
 | **Stable Audio 2.0** | 20 two‑minute tracks/day | <https://stableaudio.com> |
 | **PlayHT** | 12 500 characters/month TTS + low‑latency API | <https://play.ht> |
+| **Riffusion** | Unlimited text‑to‑music song generation | <https://www.riffusion.com> |
+
 
 ---
 
@@ -101,6 +107,7 @@
 | **OpenRouter API** | Multiple `free` LLMs up to 50 calls/day without credits | <https://openrouter.ai/docs> |
 | **Cloudflare Workers AI** | 10 000 “Neurons” (inference units) per day on Free plan | <https://developers.cloudflare.com/workers-ai> |
 | **Fireworks AI** | “Developer” tier free; start with $1 promo credit & open‑model library | <https://fireworks.ai> |
+| **IBM watsonx.ai** | Free tier: 50 000 inference tokens + 20 C‑hour training/month | <https://www.ibm.com/products/watsonx-ai> |
 
 
 
