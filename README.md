@@ -1,7 +1,7 @@
 <div align="center">
 
-### List of No-Cost Generative AI Tools
-###### This list is intended for developers, researchers, and enthusiasts, with a focus on providing free options for others.
+## List of No-Cost Generative AI Tools
+##### This list is intended for developers, researchers, and enthusiasts, with a focus on providing free options for all.
 
 ![Free-AI](https://img.shields.io/badge/Free--AI-List-blue)
 ![Status](https://img.shields.io/badge/Status-Active-green)
