@@ -33,7 +33,7 @@
 |**Qwen3-235B-A22B**| Free Qwen3 235b Usage no signup|[chat.qwen.ai](https://chat.qwen.ai/)
 |**o3 Pro**| Free `o3 pro` and `all chatgpt + usage` requires generating seed token | [sharedchat.cn](https://sharedchat.cn)
 | **OpenRouter Playground** | Dozens of `free` models (e.g., DeepSeek‑R1, Cypher‑Alpha) up to 50 free requests/day | <https://openrouter.ai/playground> |
-| **HuggingChat** | Open‑source UI with 30 + OSS models (`Llama 3`, `Mistral‑7B` etc..); no login required | <https://huggingface.co/chat/> |
+| **HuggingChat** | Open‑source UI with 30 + OSS models (`Llama 3`, `Mistral‑7B` etc..); no login required #CURRENTLY UPDATING NOT WORKING!| <https://huggingface.co/chat/> |
 
 
 
@@ -108,6 +108,8 @@
 | **Cloudflare Workers AI** | 10 000 “Neurons” (inference units) per day on Free plan | <https://developers.cloudflare.com/workers-ai> |
 | **Fireworks AI** | “Developer” tier free; start with $1 promo credit & open‑model library | <https://fireworks.ai> |
 | **IBM watsonx.ai** | Free tier: 50 000 inference tokens + 20 C‑hour training/month | <https://www.ibm.com/products/watsonx-ai> |
+| **HuggingChat** | Open‑source UI with 30 + OSS models (`Llama 3`, `Mistral‑7B` etc..) | <https://huggingface.co/models> |
+
 
 
 
