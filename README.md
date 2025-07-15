@@ -1,79 +1,80 @@
 <div align="center">
 
 ## List of No-Cost Generative AI Tools
-##### This list is intended for developers, researchers, and enthusiasts any contribution is appreciated.
+##### A living index for developers, researchers & curious builders   — contributions welcome!
 
-![Free-AI](https://img.shields.io/badge/Free--AI-List-blue)
+![Free‑AI](https://img.shields.io/badge/Free--AI-List-blue)
 ![Status](https://img.shields.io/badge/Status-Active-green)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
- 
-**[AI Model Leaderboards](#ai-model-leaderboards)**
 
-**[AI Chat Interfaces](#ai-chat-interfaces)**
-
-**[Generative Media Platforms (Image, Video, Audio)](#generative-media-platforms-image-video-audio)**
-
-**[Developer APIs & Platforms](#developer-apis--platforms)**
-
-**[Contributing](#contributing)**
+**[Leaderboards](#leaderboards)** | **[Chat Interfaces](#chat-interfaces)** | **[Media Generation](#media-generation-image‑video‑audio)** | **[Voice & Music](#voice--music)** | **[Developer APIs](#developer-apis)** | **[Contributing](#contributing)**
 
 </div>
 
+---
 
-## AI Model Leaderboards
-
-| Platform | LLM Leaderboard | Link |
-| :--- | :--- | :--- |
-| **Hugging Face Open LLM Leaderboard** | Free access to view rankings and detailed evaluations of numerous open-source models based on key benchmarks. | [huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) |
-| **AlpacaEval Leaderboard** | Free access to a leaderboard that ranks language models based on their instruction-following ability, benchmarked against `GPT-4`. | [tatsu-lab.github.io/alpaca_eval/](https://tatsu-lab.github.io/alpaca_eval/) |
+## Leaderboards
+| Platform | Scope | Link |
+| --- | --- | --- |
+| **AlpacaEval** | Instruction‑following ability vs GPT‑4 | <https://tatsu-lab.github.io/alpaca_eval/> |
+| **Hugging Face – Open LLM Leaderboard** | Cross‑domain evals on >4 k open‑source LLMs | <https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard> |
+| **Chatbot Arena Leaderboard** | Crowd‑sourced Elo ranking of chat models | <https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard> |
+| **MTEB Embedding Leaderboard** | 100 + languages, 1000 + NLP tasks | <https://huggingface.co/spaces/mteb/leaderboard> |
 
 ---
 
-## AI Chat Interfaces
+## Chat Interfaces
 
-| Service | Free Multimodel Access | Link |
-| :--- | :--- | :--- |
-| **LMSYS Chatbot Arena** | Free access to top language models such as `Claude 4 Opus`, `Grok 4` etc.. Almost all big models | [lmarena.ai](https://lmarena.ai/) |
-| **Poe by Quora** | Daily "points" to access a variety of models, including `Claude 4 Sonnet` and `GPT-o3` etc.. | [poe.com](https://poe.com/) |
+### “Battle‑style” or multi‑model playgrounds  
+| Service | Free Access Highlights | Link |
+| --- | --- | --- |
+| **LMSYS Chatbot Arena** | Blind pairwise battles against 40 + models | <https://lmsys.org/arena/> |
+| **Quora Poe** | Daily points; choose among GPT‑o3, Claude 3.5, Grok 2 etc. | <https://poe.com> |
 |**Qwen3-235B-A22B**| Free Qwen3 235b Usage no signup|[chat.qwen.ai](https://chat.qwen.ai/)
 
 
-<br>
-
-| Service | Free Tier Access & Models | Link |
-| :--- | :--- | :--- |
-| **ChatGPT** | Unlimited access to `GPT-3.5`. Limited access to `GPT-4o` with daily caps. | [chatgpt.com](https://chatgpt.com/) |
-| **Claude** | Access to `Claude 3.5 Sonnet`. Message limits reset every few hours. | [claude.ai](https://claude.ai/) |
-| **Google Gemini** | Access to `Gemini 1.5 Pro` with a 1 million token context window. | [gemini.google.com](https://gemini.google.com/) |
-| **Microsoft Copilot** | Access to `GPT-4o` and other OpenAI models, integrated with Bing Search. | [copilot.microsoft.com](https://copilot.microsoft.com/) |
-| **Groq Web UI** | Access to open models like `Llama 3`, `Mixtral`, and `Gemma`. | [groq.com](https://groq.com/) |
-| **Meta AI** | Free access to the `Llama` model, integrated with real-time search results. | [www.meta.ai](https://www.meta.ai/) |
-| **Mistral Le Chat** | Free access to Mistral's models, including `Mistral` and `Codestral`. | [chat.mistral.ai](https://chat.mistral.ai/) |
-| **Perplexity** | Free access to an answer engine powered by models like `Llama`. | [perplexity.ai](https://perplexity.ai/) |
-| **xAI's Grok** | Free access to the base Grok model is available to all X (formerly Twitter) users. | [x.ai/grok](https://x.ai/grok) |
-| **DeepSeek** | Free access to the `DeepSeek` chat model. | [chat.deepseek.com](https://chat.deepseek.com/) |
-| **Phind** | Free access to an AI search engine for developers, powered by its own model. | [www.phind.com](https://www.phind.com) |
+### Single‑model portals  
+| Service | Always‑Free Tier | Notes |
+| --- | --- | --- |
+| **ChatGPT** | Unlimited `GPT‑3.5`; limited `GPT‑4o` messages/day | <https://chatgpt.com> |
+| **Claude.ai** | `Claude 3.5 Sonnet`; resets ~8 h | <https://claude.ai> |
+| **Gemini** | `Gemini 1.5 Flash` with 1 M context (Free Tier) | <https://gemini.google.com> |
+| **Microsoft Copilot** | `GPT‑4o` + Bing grounding | <https://copilot.microsoft.com> |
+| **Groq Web UI** | Ultra‑fast `Llama 3‑70B`, `Mixtral 8×22B`, `Gemma 2B` | <https://groq.com> |
+| **Meta AI** | `Llama 3‑70B` with real‑time search | <https://www.meta.ai> |
+| **Mistral Le Chat** | `Mistral‑Large`, `Codestral‑22B` | <https://chat.mistral.ai> |
+| **Perplexity** | `Perplexity LLaMA‑3‑70B‑Chat`; answer engine UI | <https://perplexity.ai> |
+| **xAI Grok (base)** | `Grok‑2` free for all X users; higher models require Premium | <https://x.ai/grok> |
+| **DeepSeek Chat** | `DeepSeek‑V2‑Chat` | <https://chat.deepseek.com> |
+| **Phind** | Developer‑centric search with Phind‑70B | <https://www.phind.com> |
 
 ---
 
-## Generative Media Platforms (Image, Video, Audio)
+## Media Generation (Image‑/Video‑/Multimodal)
 
-| Platform | Free No Signup Required | Link |
-| :--- | :--- | :--- |
+| Platform | Free Plan | Notes |
+| --- | --- | --- |
 | **Microsoft Designer** | Free edit images etc.. | [designer.microsoft.com](https://designer.microsoft.com) |
-
-<br>
-
-| Platform | Free Signup Required | Link |
-| :--- | :--- | :--- |
-| **Leonardo.Ai** | Daily free tokens for image generation using their proprietary models. | [leonardo.ai](https://leonardo.ai) |
-| **Adobe Firefly** | Monthly generative credits for use with the `Firefly Image 3` model. | [firefly.adobe.com](https://firefly.adobe.com) |
-| **Midjourney** | Occasional, limited-time free trials on their Discord server. | [www.midjourney.com](https://www.midjourney.com) |
-| **RunwayML** | Initial free credits for generating video clips with models like `Gen-3 Alpha`. | [runwayml.com](https://runwayml.com) |
-| **Pika** | Free tier with credits to generate watermarked videos. | [pika.art](https://pika.art) |
-| **Suno** | Daily free credits to generate full songs with lyrics and vocals. | [suno.com](https://suno.com) |
+| **Leonardo.Ai** | 150 daily tokens. | [leonardo.ai](https://leonardo.ai) |
+| **Adobe Firefly** | 25–100 generative credits/mo  | [firefly.adobe.com](https://firefly.adobe.com) |
+| **Midjourney** | Intermittent free “open beta” days (Discord) | [www.midjourney.com](https://www.midjourney.com) |
+| **RunwayML** | 125 video tokens on sign‑up | [runwayml.com](https://runwayml.com) |
+| **Pika** | Water‑marked HD clips; 30 credits/day  | [pika.art](https://pika.art) |
+| **Suno** | 10 songs/day (water‑marked) | [suno.com](https://suno.com) |
 | **Udio** | Free tier with monthly credits for generating music. | [www.udio.com](https://www.udio.com) |
+| **NightCafe** | 5 free credits daily | SDXL & community challenges |
+| **Clipdrop** | Unlimited SD 3.5 1 MP images (low‑res) | |
+| **DreamStudio** | 25 promo credits on new sign‑up | SD 3 Medium & SDXL |
+| **Udio** | 300 music credits/mo | |
 
+---
+
+## Voice & Music
+
+| Service | Free Quota | Link |
+| --- | --- | --- |
+| **ElevenLabs** | 10 000 characters/month TTS/STT | <https://elevenlabs.io> |
+| **Stable Audio 2.0** | 20 two‑minute tracks/day | <https://stableaudio.com> |
 ---
 
 ## Developer APIs & Platforms
