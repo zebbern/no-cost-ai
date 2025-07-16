@@ -7,7 +7,7 @@
 ![Status](https://img.shields.io/badge/Status-Active-green)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
 
-**[Leaderboards](#leaderboards)** | **[Chat Interfaces](#chat-interfaces)** | **[Media Generation (Image/Video)](#media-generation)** | **[Voice & Music](#voice-music)** | **[AI IDEs](#ai-ides)** | **[Developer APIs](#developer-apis--platforms)** | **[Contributing](#contributing)**
+**[Leaderboards](#leaderboards)** | **[Chat Interfaces](#chat-interfaces)** | **[Media Generation (Image/Video)](#media-generation)** | **[Voice & Music](#voice--music)** | **[AI IDEs](#ai-ides)** | **[Developer APIs](#developer-apis--platforms)** | **[Contributing](#contributing)**
 
 </div>
 
@@ -24,8 +24,7 @@
 ---
 
 ## Chat-Interfaces
-
-### “Battle‑style” or multi‑model playgrounds  
+#### “Battle‑style” or multi‑model playground
 | Service | Free Access Highlights | Link |
 | --- | --- | --- |
 | **LMSYS Chatbot Arena** | No Login! Free `Claude 4 sonnet/opus`, `Grok 4`, `o3`, `Gemini 2.5 Pro` etc.. 40 + models | <https://lmarena.ai/> |
@@ -38,7 +37,8 @@
 
 
 
-### Single‑model portals  
+#### Single‑model portals
+
 | Service | Always‑Free Tier | Notes |
 | --- | --- | --- |
 | **ChatGPT** | Unlimited `GPT‑3.5`; limited `GPT‑4o` messages/day | <https://chatgpt.com> |
@@ -61,7 +61,7 @@
 ---
 
 ## Media-Generation
-> (Image‑/Video‑/Multimodal)
+#### (Image‑/Video‑/Multimodal)
 
 | Platform | Free Plan | Notes |
 | --- | --- | --- |
@@ -87,7 +87,7 @@
 
 ---
 
-## Voice & Music
+## Voice & Music
 
 | Service | Free Quota | Link |
 | --- | --- | --- |
