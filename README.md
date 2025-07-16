@@ -16,10 +16,10 @@
 ## Leaderboards
 | Platform | Scope | Link |
 | --- | --- | --- |
-| **AlpacaEval** | Instruction‑following ability vs GPT‑4 | <https://tatsu-lab.github.io/alpaca_eval/> |
-| **Hugging Face Open LLM Leaderboard** | Cross‑domain evals on >4 k open‑source LLMs | <https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard> |
-| **Chatbot Arena Leaderboard** | Crowd‑sourced Elo ranking of chat models | <https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard> |
-| **MTEB Embedding Leaderboard** | 100 + languages, 1000 + NLP tasks | <https://huggingface.co/spaces/mteb/leaderboard> |
+| **AlpacaEval** | Instruction‑following ability vs GPT‑4 | [alpaca_eval](https://tatsu-lab.github.io/alpaca_eval/) |
+| **Hugging Face Open LLM Leaderboard** | Cross‑domain evals on >4 k open‑source LLMs | [open_llm_leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) |
+| **Chatbot Arena Leaderboard** | Crowd‑sourced Elo ranking of chat models | [chatbot-arena-leaderboard](https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard) |
+| **MTEB Embedding Leaderboard** | 100 + languages, 1000 + NLP tasks | [mteb/leaderboard](https://huggingface.co/spaces/mteb/leaderboard) |
 
 ---
 
