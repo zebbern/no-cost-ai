@@ -28,10 +28,10 @@
 | Platform | Free Quota | Link | Signup Needed ✅/❌|
 | --- | --- | --- | --- |
 | **LMSYS Chatbot Arena** |Free `Claude 4 sonnet/opus`, `Grok 4`, `o3`, `Gemini 2.5 Pro` etc.. 40 + models | <https://lmarena.ai/> |❌|
-|**Qwen3-235B-A22B**| Free Qwen3 235b Usage|[chat.qwen.ai](https://chat.qwen.ai/) |❌|
+|**Qwen3-235B-A22B**| Free `Qwen3 235b` Usage|[chat.qwen.ai](https://chat.qwen.ai/) |❌|
 | **Quora Poe** | Daily points resets every 24h free `o3`, `Claude 4 opus`, `Grok 4` etc.. | <https://poe.com> |✅|
 |**o3 Pro**| Free `o3 pro` and `all chatgpt + usage` requires generating seed token[will add soon how to, i also know they currently have some issues]| [sharedchat.cn](https://sharedchat.cn)|✅|
-| **OpenRouter Playground** | Dozens of `free` models (e.g., DeepSeek‑R1, Cypher‑Alpha) up to 50 free requests/day | <https://openrouter.ai/playground> |✅|
+| **OpenRouter Playground** | Dozens of `free` models (`DeepSeek‑R1`, `Cypher‑Alpha`) up to 50 free requests/day | <https://openrouter.ai/playground> |✅|
 | **HuggingChat** | 30 + OSS models (`Llama 4`  etc..)| <https://huggingface.co/spaces> |✅|
 
 
