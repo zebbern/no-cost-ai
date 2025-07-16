@@ -42,7 +42,6 @@
 | Platform | Free Quota | Link | Signup Needed ✅/❌|
 | --- | --- | --- | --- |
 | **ChatGPT** | Unlimited `GPT‑3.5`; limited `GPT‑4o` messages/day | <https://chatgpt.com> |❌|
-| **Claude.ai** | `Claude 3.5 Sonnet`; resets every 8 h | <https://claude.ai> |❌|
 | **Groq Web UI** | `Llama 4` etc.. | <https://groq.com> |❌|
 | **Meta AI** | `Llama 4` with real‑time search | <https://www.meta.ai> |❌|
 | **Mistral Le Chat** | `Mistral‑Large`, `Codestral‑22B` | <https://chat.mistral.ai> |❌|
@@ -50,6 +49,7 @@
 | **xAI Grok (base)** | `Grok‑3` free | <https://grok.com/chat> |❌|
 | **Phind** | Developer‑centric search with Phind‑70B-Model | <https://www.phind.com> |❌|
 | **Pi.ai** | Unlimited personal‑assistant style conversations | <https://pi.ai> |❌|
+| **Claude.ai** | `Claude 3.5 Sonnet`; resets every 8 h | <https://claude.ai> |✅|
 | **ChatSonic** | 25 – 50 free generations/day (AI assistant developed by Writesonic uses ai agents) | <https://writesonic.com/chat> |✅|
 | **Character.AI** | Unlimited chat & voice calls with millions of user‑made characters | <https://character.ai> |✅|
 | **Gemini** | `Gemini 2.5 Flash/2.5 Pro` (Free Tier) | <https://gemini.google.com> |✅|
