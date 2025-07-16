@@ -32,7 +32,7 @@
 |**Qwen3-235B-A22B**| Free Qwen3 235b Usage|[chat.qwen.ai](https://chat.qwen.ai/)
 |**o3 Pro**| Free `o3 pro` and `all chatgpt + usage` requires generating seed token[will add soon how to]| [sharedchat.cn](https://sharedchat.cn)
 | **OpenRouter Playground** | Dozens of `free` models (e.g., DeepSeek‑R1, Cypher‑Alpha) up to 50 free requests/day | <https://openrouter.ai/playground> |
-| **HuggingChat** | 30 + OSS models (`Llama 3`, `Mistral‑7B` etc..)| <https://huggingface.co/spaces> |
+| **HuggingChat** | 30 + OSS models (`Llama 4`  etc..)| <https://huggingface.co/spaces> |
 
 
 
