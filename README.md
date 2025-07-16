@@ -25,7 +25,7 @@
 
 ## Chat-Interfaces
 #### “Battle‑style” or multi‑model playground
-| Platform | Free Quota | Link | Signup Needed ✅/❌|
+| Platform | Free Quota | Link | Signup  ✅/❌|
 | --- | --- | --- | --- |
 | **LMSYS Chatbot Arena** |Free `Claude 4 sonnet/opus`, `Grok 4`, `o3`, `Gemini 2.5 Pro` etc.. 40 + models | [lmarena.ai](https://lmarena.ai/) |❌|
 |**Qwen3-235B-A22B**| Free `Qwen3 235b` Usage|[chat.qwen.ai](https://chat.qwen.ai/) |❌|
@@ -39,7 +39,7 @@
 
 #### Single‑model portals
 
-| Platform | Free Quota | Link | Signup Needed ✅/❌|
+| Platform | Free Quota | Link | Signup  ✅/❌|
 | --- | --- | --- | --- |
 | **ChatGPT** | Unlimited `GPT‑3.5`; limited `GPT‑4o` messages/day | [chatgpt.com](https://chatgpt.com) |❌|
 | **Groq Web UI** | `Llama 4` etc.. | [groq.com](https://groq.com) |❌|
@@ -63,7 +63,7 @@
 ## Media-Generation
 #### (Image‑/Video‑/Multimodal)
 
-| Platform | Free Quota | Link | Signup Needed ✅/❌|
+| Platform | Free Quota | Link | Signup  ✅/❌|
 | --- | --- | --- | --- |
 | **Bing Image/Video Creator** | Unlimited DALL·E 3 images (standard speed) they also have option to generates videos for any Microsoft Account | [bing.com](https://www.bing.com/images/create) |✅|
 | **Microsoft Designer** | Free edit images etc.. | [designer.microsoft.com](https://designer.microsoft.com) |✅|
@@ -89,7 +89,7 @@
 
 ## Voice & Music
 
-| Platform | Free Quota | Link | Signup Needed ✅/❌|
+| Platform | Free Quota | Link | Signup  ✅/❌|
 | --- | --- | --- | --- |
 | **ElevenLabs** | 10 000 characters/month TTS/STT | [elevenlabs.io](https://elevenlabs.io) |✅|
 | **Stable Audio 2.0** | 20 two‑minute tracks/day | [stableaudio.com](https://stableaudio.com) |✅|
@@ -103,7 +103,7 @@
 
 ## AI IDEs
 
-| Platform | Free Quota | Link | Signup Needed ✅/❌|
+| Platform | Free Quota | Link | Signup  ✅/❌|
 | :--- | :--- | :--- | :--- |
 | **Kiro.dev** | Free preview tier: 50 agent interactions/month; spec-driven AI IDE with agent hooks, MCP support, real-time diffs & VS Code-compatible extensions | [kiro.dev](https://kiro.dev) |✅|
 
@@ -111,7 +111,7 @@
 
 ## Developer APIs & Platforms
 
-| Platform / API | Free Quota  | Link | Signup Needed ✅/❌|
+| Platform / API | Free Quota  | Link | Signup  ✅/❌|
 | :--- | :--- | :--- | :--- |
 | **Groq API** | Very generous free tier for `Llama 4`, `Mixtral`, and `Gemma` with high rate limits. | [console.groq.com](https://console.groq.com/playground) |✅|
 | **Google AI (Gemini API)**| Free tier for `Gemini 2.5 Flash/Pro` and `Gemma` with a 60 RPM (requests per minute) rate limit. | [ai.google.dev](https://ai.google.dev) |✅|
