@@ -80,7 +80,7 @@
 | **Udio** | 300 music credits/mo | |
 | **Playground AI** | Up to 1 000 images/day | Uses SDXL & DALL‑E 2 |
 | **Mage.space** | Unlimited image/video generations | No watermark, multiple SD models |
-| **Bing Image Creator** | Unlimited DALL·E 3 images (standard speed) for any Microsoft Account | <https://www.bing.com/images/create> |
+| **Bing Image/Video Creator** | Unlimited DALL·E 3 images (standard speed) they also have option to generates videos for any Microsoft Account | <https://www.bing.com/images/create> |
 | **Ideogram** | 10 free credits per week | <https://ideogram.ai> |
 | **Genmo AI** | 2 watermark‑free videos/day (~30 / mo) | <https://www.genmo.ai> |
 
