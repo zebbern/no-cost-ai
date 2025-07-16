@@ -123,11 +123,11 @@
 | **OpenAI API** | New accounts receive free credits that expire after a set period. | [platform.openai.com](https://platform.openai.com) |✅|
 | **OpenRouter API** | Multiple `free` LLMs up to 50 calls/day without credits | [openrouter.ai](https://openrouter.ai/docs) |✅|
 | **Cloudflare Workers AI** | 10 000 “Neurons” (inference units) per day on Free plan | [developers.cloudflare.com](https://developers.cloudflare.com/workers-ai) |✅|
-| **Fireworks AI** | “Developer” tier free; start with $1 promo credit & open‑model library | [fireworks.ai](https://fireworks.ai) |✅|
+| **Fireworks AI** | “Developer” tier free start with $1 promo credit & open‑model library | [fireworks.ai](https://fireworks.ai) |✅|
 | **IBM watsonx.ai** | Free tier: 50 000 inference tokens + 20 C‑hour training/month | [ibm.com](https://www.ibm.com/products/watsonx-ai) |✅|
-| **HuggingChat** | Open‑source UI with 30 + OSS models (`Llama 3`, `Mistral‑7B` etc..) | [huggingface.co](https://huggingface.co/models) |✅|
-| **Vercel AI SDK** | Open‑source TypeScript SDK & gateway to 100 + models — fully free | [ai-sdk.dev](https://ai-sdk.dev) |✅|
-| **Ollama** | Free local LLM runtime & OpenAI‑compatible REST API; run Llama 3, Gemma, etc. offline | [ollama.com](https://ollama.com) |❌|
+| **HuggingChat** | Open‑source UI with 30 + OSS models (`Llama 4` etc..) | [huggingface.co](https://huggingface.co/models) |✅|
+| **Vercel AI SDK** | Open‑source TypeScript SDK & gateway to 100 + models free | [ai-sdk.dev](https://ai-sdk.dev) |✅|
+| **Ollama** | Free local LLM runtime & OpenAI‑compatible REST API run Llama 4, Gemma, etc.. offline | [ollama.com](https://ollama.com) |❌|
 
 
 
