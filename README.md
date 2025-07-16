@@ -25,12 +25,12 @@
 
 ## Chat-Interfaces
 #### “Battle‑style” or multi‑model playground
-| Service | Free Access Highlights | Link |
-| --- | --- | --- |
-| **LMSYS Chatbot Arena** | No Login! Free `Claude 4 sonnet/opus`, `Grok 4`, `o3`, `Gemini 2.5 Pro` etc.. 40 + models | <https://lmarena.ai/> |
+| Platform | Free Quota | Link |
+| --- | --- | --- | --- |
+| **LMSYS Chatbot Arena** | No Signup! Free `Claude 4 sonnet/opus`, `Grok 4`, `o3`, `Gemini 2.5 Pro` etc.. 40 + models | <https://lmarena.ai/> |
 | **Quora Poe** | Daily points resets every 24h free `o3`, `Claude 4 opus`, `Grok 4` etc.. | <https://poe.com> |
 |**Qwen3-235B-A22B**| Free Qwen3 235b Usage|[chat.qwen.ai](https://chat.qwen.ai/)
-|**o3 Pro**| Free `o3 pro` and `all chatgpt + usage` requires generating seed token[will add soon how to]| [sharedchat.cn](https://sharedchat.cn)
+|**o3 Pro**| Free `o3 pro` and `all chatgpt + usage` requires generating seed token[will add soon how to, i also know they currently have some issues]| [sharedchat.cn](https://sharedchat.cn)
 | **OpenRouter Playground** | Dozens of `free` models (e.g., DeepSeek‑R1, Cypher‑Alpha) up to 50 free requests/day | <https://openrouter.ai/playground> |
 | **HuggingChat** | 30 + OSS models (`Llama 4`  etc..)| <https://huggingface.co/spaces> |
 
@@ -39,20 +39,20 @@
 
 #### Single‑model portals
 
-| Service | Always‑Free Tier | Notes |
-| --- | --- | --- |
+| Platform | Free Quota | Link |
+| --- | --- | --- | --- |
 | **ChatGPT** | Unlimited `GPT‑3.5`; limited `GPT‑4o` messages/day | <https://chatgpt.com> |
-| **Claude.ai** | `Claude 3.5 Sonnet`; resets ~8 h | <https://claude.ai> |
+| **Claude.ai** | `Claude 3.5 Sonnet`; resets every 8 h | <https://claude.ai> |
 | **Gemini** | `Gemini 2.5 Flash/2.5 Pro` (Free Tier) | <https://gemini.google.com> |
 | **Microsoft Copilot** | `GPT‑4o` + Bing grounding | <https://copilot.microsoft.com> |
-| **Groq Web UI** | Ultra‑fast `Llama 3‑70B`, `Mixtral 8×22B`, `Gemma 2B` | <https://groq.com> |
-| **Meta AI** | `Llama 3‑70B` with real‑time search | <https://www.meta.ai> |
+| **Groq Web UI** | `Llama 4` etc.. | <https://groq.com> |
+| **Meta AI** | `Llama 4` with real‑time search No Signup! | <https://www.meta.ai> |
 | **Mistral Le Chat** | `Mistral‑Large`, `Codestral‑22B` | <https://chat.mistral.ai> |
-| **Perplexity** | `Perplexity LLaMA‑3‑70B‑Chat`; answer engine UI | <https://perplexity.ai> |
-| **xAI Grok (base)** | `Grok‑3` free higher models require Premium | <https://grok.com/chat> |
+| **Perplexity** | `Sonar built on the LLaMA 3.1 70B`; Free answer engine UI No singup! | <https://perplexity.ai> |
+| **xAI Grok (base)** | `Grok‑3` free | <https://grok.com/chat> |
 | **DeepSeek Chat** | `DeepSeek‑V3` | <https://chat.deepseek.com> |
-| **Phind** | Developer‑centric search with Phind‑70B | <https://www.phind.com> |
-| **ChatSonic** | 25 – 50 free generations/day (GPT‑4o & real‑time Google search) | <https://writesonic.com/chat> |
+| **Phind** | Developer‑centric search with Phind‑70B-Model No Signup! | <https://www.phind.com> |
+| **ChatSonic** | 25 – 50 free generations/day (AI assistant developed by Writesonic uses ai agents) | <https://writesonic.com/chat> |
 | **Character.AI** | Unlimited chat & voice calls with millions of user‑made characters | <https://character.ai> |
 | **Pi.ai** | Unlimited personal‑assistant style conversations | <https://pi.ai> |
 
@@ -63,8 +63,8 @@
 ## Media-Generation
 #### (Image‑/Video‑/Multimodal)
 
-| Platform | Free Plan | Notes |
-| --- | --- | --- |
+| Platform | Free Quota | Link |
+| --- | --- | --- | --- |
 | **Microsoft Designer** | Free edit images etc.. | [designer.microsoft.com](https://designer.microsoft.com) |
 | **Leonardo.Ai** | 150 daily tokens. | [leonardo.ai](https://leonardo.ai) |
 | **Adobe Firefly** | 25–100 generative credits/mo  | [firefly.adobe.com](https://firefly.adobe.com) |
@@ -89,12 +89,12 @@
 
 ## Voice & Music
 
-| Service | Free Quota | Link |
-| --- | --- | --- |
+| Platform | Free Quota | Link |
+| --- | --- | --- | --- |
 | **ElevenLabs** | 10 000 characters/month TTS/STT | <https://elevenlabs.io> |
 | **Stable Audio 2.0** | 20 two‑minute tracks/day | <https://stableaudio.com> |
 | **PlayHT** | 12 500 characters/month TTS + low‑latency API | <https://play.ht> |
-| **Riffusion** | Unlimited text‑to‑music song generation | <https://www.riffusion.com> |
+| **Riffusion** | Unlimited text‑to‑music song generation Signup Required| <https://www.riffusion.com> |
 | **Uberduck** | 300 renders (~5 min audio) free/month; TTS & voice cloning | <https://www.uberduck.ai> |
 
 
@@ -103,7 +103,7 @@
 
 ## AI IDEs
 
-| Service             | What it is/does                                                      | Link                   |
+| Platform             | Free Quota                                                      | Link                   |
 | ------------------- | ----------------------------------------------------------------- | ---------------------- |
 | **Kiro.dev** | Free preview tier: 50 agent interactions/month; spec-driven AI IDE with agent hooks, MCP support, real-time diffs & VS Code-compatible extensions | [kiro.dev](https://kiro.dev) |
 
@@ -111,8 +111,8 @@
 
 ## Developer APIs & Platforms
 
-| Platform / API | Free Tier Access & Models | Link |
-| :--- | :--- | :--- |
+| Platform / API | Free Quota  | Link |
+| :--- | :--- | :--- | :--- |
 | **Groq API** | Very generous free tier for `Llama 4`, `Mixtral`, and `Gemma` with high rate limits. | [console.groq.com](https://console.groq.com/playground) |
 | **Google AI (Gemini API)**| Free tier for `Gemini 2.5 Flash/Pro` and `Gemma` with a 60 RPM (requests per minute) rate limit. | [ai.google.dev](https://ai.google.dev) |
 | **DeepSeek API** | 1 million free tokens for `DeepSeek-V2` (Chat and Coder models). | [platform.deepseek.com](https://platform.deepseek.com) |
