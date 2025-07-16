@@ -23,7 +23,7 @@
 
 ---
 
-## Chat
+## Chat-Interfaces
 
 ### “Battle‑style” or multi‑model playgrounds  
 | Service | Free Access Highlights | Link |
