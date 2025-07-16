@@ -1,6 +1,6 @@
 <div align="center">
 
-## List of No-Cost Generative AI Tools
+## No-Cost Generative AI Tools
 ##### A living index for developers, researchers & curious builders contributions is welcome & appriciated!
 
 ![Free‑AI](https://img.shields.io/badge/Free--AI-List-blue)
