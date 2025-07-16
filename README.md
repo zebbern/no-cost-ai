@@ -7,7 +7,7 @@
 ![Status](https://img.shields.io/badge/Status-Active-green)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
 
-**[Leaderboards](#leaderboards)** | **[Chat](#chat)** | **[Media Generation](#media-generation)** | **[Voice & Music](#voice--music)** | **[Developer APIs](#developer-apis--platforms)** | **[Contributing](#contributing)**
+**[Leaderboards](#leaderboards)** | **[Chat Interfaces](#chat-interfaces)** | **[Media Generation](#media-generation)** | **[Voice & Music](#voice--music)** | **[Developer APIs](#developer-apis--platforms)** | **[Contributing](#contributing)**
 
 </div>
 
