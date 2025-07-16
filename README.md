@@ -47,7 +47,7 @@
 | **Meta AI** | `Llama 4` with real‑time search | [meta.ai](https://www.meta.ai) |❌|
 | **Mistral Le Chat** | `Mistral‑Large`, `Codestral‑22B` | [chat.mistral.ai](https://chat.mistral.ai) |❌|
 | **Perplexity** | `Sonar built on the LLaMA 3.1 70B`; Free answer engine UI | [perplexity.ai](https://perplexity.ai) |❌|
-| **xAI Grok (base)** | `Grok‑3` free | [](https://grok.com/chat) |❌|
+| **xAI Grok (base)** | `Grok‑3` free | [grok.com](https://grok.com/chat) |❌|
 | **Phind** | Developer‑centric search with Phind‑70B-Model | [phind.com](https://www.phind.com) |❌|
 | **Pi.ai** | Unlimited personal‑assistant style conversations | [pi.ai](https://pi.ai) |❌|
 | **Claude.ai** | `Claude 3.5 Sonnet`; resets every 8 h | [claude.ai](https://claude.ai) |✅|
