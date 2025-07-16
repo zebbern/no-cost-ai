@@ -1,4 +1,4 @@
-[](div align="center")
+<div align="center")
 
 ## No-Cost Generative AI Tools
 ##### A living index for developers, researchers & curious builders contributions is welcome & appriciated!
@@ -9,7 +9,7 @@
 
 **[Leaderboards](#leaderboards)** | **[Chat Interfaces](#chat-interfaces)** | **[Media Generation (Image/Video)](#media-generation)** | **[Voice & Music](#voice--music)** | **[AI IDEs](#ai-ides)** | **[Developer APIs](#developer-apis--platforms)** | **[Contributing](#contributing)**
 
-[](/div)
+</div>
 
 ---
 
