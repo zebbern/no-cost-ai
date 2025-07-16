@@ -25,7 +25,7 @@
 ---
 
 ## Chat-Interfaces
-#### “Battle‑style” or multi‑model playground
+#### Battle‑style or multi‑model playground
 | Platform | Free Quota | Link | Signup  ✅/❌|
 | --- | --- | --- | --- |
 | **LMSYS Chatbot Arena** |Free `Claude 4 sonnet/opus`, `Grok 4`, `o3`, `Gemini 2.5 Pro` etc.. 40 + models | [lmarena.ai](https://lmarena.ai/) |❌|
