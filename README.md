@@ -100,6 +100,14 @@
 
 ---
 
+## AI IDEs
+
+| Service             | What it does                                                      | Link                   |
+| ------------------- | ----------------------------------------------------------------- | ---------------------- |
+| **Kiro.dev**        | Spec-driven AI IDE with agent hooks, multimodal context, real-time code diffs, VS Code-compatible extensions(will update later today) | https://kiro.dev       |
+
+---
+
 ## Developer APIs & Platforms
 
 | Platform / API | Free Tier Access & Models | Link |
