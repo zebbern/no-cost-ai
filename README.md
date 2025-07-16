@@ -104,7 +104,7 @@
 
 | Service             | What it does                                                      | Link                   |
 | ------------------- | ----------------------------------------------------------------- | ---------------------- |
-| **Kiro.dev**        | Spec-driven AI IDE with agent hooks, multimodal context, real-time code diffs, VS Code-compatible extensions(will update later today) | https://kiro.dev       |
+| **Kiro.dev**        | Currently free usage, Spec-driven AI IDE with agent hooks, multimodal context, real-time code diffs, VS Code-compatible extensions(will update later today) | https://kiro.dev       |
 
 ---
 
