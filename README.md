@@ -49,7 +49,7 @@
 | **Meta AI** | `Llama 3‑70B` with real‑time search | <https://www.meta.ai> |
 | **Mistral Le Chat** | `Mistral‑Large`, `Codestral‑22B` | <https://chat.mistral.ai> |
 | **Perplexity** | `Perplexity LLaMA‑3‑70B‑Chat`; answer engine UI | <https://perplexity.ai> |
-| **xAI Grok (base)** | `Grok‑2` free for all X users; higher models require Premium | <https://x.ai/grok> |
+| **xAI Grok (base)** | `Grok‑3` free higher models require Premium | <https://grok.com/chat> |
 | **DeepSeek Chat** | `DeepSeek‑V3` | <https://chat.deepseek.com> |
 | **Phind** | Developer‑centric search with Phind‑70B | <https://www.phind.com> |
 | **ChatSonic** | 25 – 50 free generations/day (GPT‑4o & real‑time Google search) | <https://writesonic.com/chat> |
@@ -113,7 +113,7 @@
 
 | Platform / API | Free Tier Access & Models | Link |
 | :--- | :--- | :--- |
-| **Groq API** | Very generous free tier for `Llama 3`, `Mixtral`, and `Gemma` with high rate limits. | [console.groq.com](https://console.groq.com) |
+| **Groq API** | Very generous free tier for `Llama 4`, `Mixtral`, and `Gemma` with high rate limits. | [console.groq.com](https://console.groq.com/playground) |
 | **Google AI (Gemini API)**| Free tier for `Gemini 2.5 Flash/Pro` and `Gemma` with a 60 RPM (requests per minute) rate limit. | [ai.google.dev](https://ai.google.dev) |
 | **DeepSeek API** | 1 million free tokens for `DeepSeek-V2` (Chat and Coder models). | [platform.deepseek.com](https://platform.deepseek.com) |
 | **Together.ai** | Provides $25 in free starting credits for testing a wide variety of open-source models. | [www.together.ai](https://www.together.ai) |
