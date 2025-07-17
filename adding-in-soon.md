@@ -18,4 +18,10 @@ Sign up required decent website builder with ai free tho
 - https://durable.co/
 - 
 
-https://docs.puter.com/AI/chat/ | loads of models need signup but good
+
+
+
+may be too hard for beginners
+- https://developer.puter.com/tutorials/free-unlimited-ai-api/
+
+- https://docs.puter.com/AI/chat/ | loads of models need signup but good
