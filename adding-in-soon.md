@@ -1,2 +1,2 @@
 - https://www.useinvent.com/ | signup required but very good
-- 
+- https://freeaichatplayground.com/ | decent but alot of non working models
