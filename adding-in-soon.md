@@ -25,3 +25,6 @@ may be too hard for beginners
 - https://developer.puter.com/tutorials/free-unlimited-ai-api/
 
 - https://docs.puter.com/AI/chat/ | loads of models need signup but good
+
+another cli but provides free use of claude 4 cuz of beta
+- https://rovodevagents-beta.atlassian.net/wiki/external/OWEyMmMwZjllYjgyNDQzNjgyNWNiN2VhYjQ3MGY4MzI
