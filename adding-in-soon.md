@@ -17,3 +17,5 @@ Free no sign up foto ai edits
 Sign up required decent website builder with ai free tho
 - https://durable.co/
 - 
+
+https://docs.puter.com/AI/chat/ | loads of models need signup but good
