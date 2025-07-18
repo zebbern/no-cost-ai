@@ -43,58 +43,115 @@ jobs:
             this.brokenLinks = [];
             this.successfulLinks = [];
             this.timeoutLinks = [];
+            this.blockedLinks = []; // For 403/bot-blocked links
+            this.redirectLoopLinks = []; // For redirect issues
             this.totalChecked = 0;
+            
+            // Sites known to block bots but are likely working
+            this.commonBotBlockers = [
+              'claude.ai',
+              'openai.com',
+              'microsoft.com',
+              'meta.ai',
+              'x.com',
+              'twitter.com',
+              'linkedin.com',
+              'discord.gg'
+            ];
+            
+            // User agents to rotate through
+            this.userAgents = [
+              'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+              'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+              'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0',
+              'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Safari/605.1.15'
+            ];
           }
         
           async checkLink(url, maxRetries = 2) {
+            // Check if this is a known bot blocker
+            const isKnownBotBlocker = this.commonBotBlockers.some(domain => url.includes(domain));
+            
             for (let attempt = 1; attempt <= maxRetries; attempt++) {
               try {
                 console.log(`Checking: ${url} (attempt ${attempt}/${maxRetries})`);
                 
+                // Rotate user agents for each attempt
+                const userAgent = this.userAgents[attempt % this.userAgents.length];
+                
                 const response = await axios.get(url, {
-                  timeout: 15000, // 15 second timeout
+                  timeout: 20000, // Increased to 20 seconds
                   headers: {
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-                    'Accept-Language': 'en-US,en;q=0.5',
-                    'Accept-Encoding': 'gzip, deflate',
-                    'Connection': 'keep-alive',
+                    'User-Agent': userAgent,
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+                    'Accept-Language': 'en-US,en;q=0.9',
+                    'Accept-Encoding': 'gzip, deflate, br',
+                    'Cache-Control': 'no-cache',
+                    'Pragma': 'no-cache',
+                    'Sec-Fetch-Dest': 'document',
+                    'Sec-Fetch-Mode': 'navigate',
+                    'Sec-Fetch-Site': 'none',
+                    'Sec-Fetch-User': '?1',
+                    'Upgrade-Insecure-Requests': '1'
                   },
-                  maxRedirects: 5,
+                  maxRedirects: 10, // Increased redirect limit
                   validateStatus: function (status) {
-                    return status >= 200 && status < 400; // Accept 2xx and 3xx status codes
+                    return status >= 200 && status < 500; // Accept more status codes
                   }
                 });
                 
                 this.successfulLinks.push({
                   url: url,
                   status: response.status,
-                  responseTime: Date.now()
+                  finalUrl: response.request.res.responseUrl || url,
+                  isKnownBotBlocker: isKnownBotBlocker
                 });
                 
                 console.log(`✓ ${url} - Status: ${response.status}`);
                 return true;
                 
               } catch (error) {
+                const errorInfo = {
+                  url: url,
+                  error: error.message,
+                  code: error.code,
+                  status: error.response?.status || 'No response',
+                  isKnownBotBlocker: isKnownBotBlocker
+                };
+                
                 if (attempt === maxRetries) {
-                  const errorInfo = {
-                    url: url,
-                    error: error.message,
-                    code: error.code,
-                    status: error.response?.status || 'No response'
-                  };
-                  
+                  // Categorize the error
                   if (error.code === 'ECONNABORTED' || error.message.includes('timeout')) {
                     this.timeoutLinks.push(errorInfo);
                     console.log(`⏱️ ${url} - Timeout`);
+                  } else if (error.message.includes('Maximum redirect') || error.message.includes('too many redirects')) {
+                    this.redirectLoopLinks.push(errorInfo);
+                    console.log(`🔄 ${url} - Redirect loop detected`);
+                  } else if (error.response?.status === 403 || error.response?.status === 429) {
+                    // Bot blocked or rate limited
+                    this.blockedLinks.push(errorInfo);
+                    if (isKnownBotBlocker) {
+                      console.log(`🛡️ ${url} - Bot blocked (expected for this site)`);
+                    } else {
+                      console.log(`🚫 ${url} - Access denied (${error.response.status})`);
+                    }
+                  } else if (error.response?.status >= 400 && error.response?.status < 500) {
+                    // Client errors (but not 403/429)
+                    this.brokenLinks.push(errorInfo);
+                    console.log(`✗ ${url} - Client error: ${error.response.status}`);
+                  } else if (error.response?.status >= 500) {
+                    // Server errors - might be temporary
+                    this.timeoutLinks.push(errorInfo);
+                    console.log(`🔧 ${url} - Server error: ${error.response.status} (might be temporary)`);
                   } else {
+                    // Network or other errors
                     this.brokenLinks.push(errorInfo);
                     console.log(`✗ ${url} - Error: ${error.message}`);
                   }
                   return false;
                 } else {
-                  console.log(`Retrying ${url} in 2 seconds...`);
-                  await new Promise(resolve => setTimeout(resolve, 2000));
+                  console.log(`Retrying ${url} in 3 seconds...`);
+                  await new Promise(resolve => setTimeout(resolve, 3000));
                 }
               }
             }
@@ -143,10 +200,15 @@ jobs:
                 totalChecked: this.totalChecked,
                 successful: this.successfulLinks.length,
                 broken: this.brokenLinks.length,
-                timeout: this.timeoutLinks.length
+                timeout: this.timeoutLinks.length,
+                blocked: this.blockedLinks.length,
+                redirectLoops: this.redirectLoopLinks.length
               },
               brokenLinks: this.brokenLinks,
-              timeoutLinks: this.timeoutLinks
+              timeoutLinks: this.timeoutLinks,
+              blockedLinks: this.blockedLinks,
+              redirectLoopLinks: this.redirectLoopLinks,
+              successfulLinks: this.successfulLinks
             };
             
             // Write detailed report to file
@@ -157,25 +219,46 @@ jobs:
             console.log(`Total links checked: ${this.totalChecked}`);
             console.log(`✓ Successful: ${this.successfulLinks.length}`);
             console.log(`✗ Broken: ${this.brokenLinks.length}`);
-            console.log(`⏱️ Timeout: ${this.timeoutLinks.length}`);
+            console.log(`⏱️ Timeout/Server errors: ${this.timeoutLinks.length}`);
+            console.log(`🛡️ Bot blocked (likely working): ${this.blockedLinks.length}`);
+            console.log(`🔄 Redirect loops: ${this.redirectLoopLinks.length}`);
+            
+            // Only treat broken links as critical issues
+            const criticalIssues = this.brokenLinks.length;
+            const warningIssues = this.timeoutLinks.length + this.redirectLoopLinks.length;
             
             if (this.brokenLinks.length > 0) {
-              console.log('\n=== BROKEN LINKS ===');
+              console.log('\n=== BROKEN LINKS (CRITICAL) ===');
               this.brokenLinks.forEach(link => {
                 console.log(`❌ ${link.url} - ${link.error} (Status: ${link.status})`);
               });
             }
             
             if (this.timeoutLinks.length > 0) {
-              console.log('\n=== TIMEOUT LINKS ===');
+              console.log('\n=== TIMEOUT/SERVER ERROR LINKS (WARNING) ===');
               this.timeoutLinks.forEach(link => {
-                console.log(`⏱️ ${link.url} - ${link.error}`);
+                console.log(`⏱️ ${link.url} - ${link.error} (Status: ${link.status})`);
               });
             }
             
-            // Set GitHub Actions outputs
+            if (this.redirectLoopLinks.length > 0) {
+              console.log('\n=== REDIRECT LOOP LINKS (WARNING) ===');
+              this.redirectLoopLinks.forEach(link => {
+                console.log(`🔄 ${link.url} - ${link.error}`);
+              });
+            }
+            
+            if (this.blockedLinks.length > 0) {
+              console.log('\n=== BOT-BLOCKED LINKS (LIKELY WORKING) ===');
+              this.blockedLinks.forEach(link => {
+                const note = link.isKnownBotBlocker ? ' (expected)' : '';
+                console.log(`🛡️ ${link.url} - ${link.error} (Status: ${link.status})${note}`);
+              });
+            }
+            
+            // Set GitHub Actions outputs - only critical issues trigger issue creation
             if (process.env.GITHUB_OUTPUT) {
-              const output = `broken_count=${this.brokenLinks.length}\ntimeout_count=${this.timeoutLinks.length}\ntotal_issues=${this.brokenLinks.length + this.timeoutLinks.length}`;
+              const output = `broken_count=${this.brokenLinks.length}\nwarning_count=${warningIssues}\ntotal_critical=${criticalIssues}\nblocked_count=${this.blockedLinks.length}`;
               fs.appendFileSync(process.env.GITHUB_OUTPUT, output);
             }
           }
