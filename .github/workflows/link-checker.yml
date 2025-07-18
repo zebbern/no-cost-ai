@@ -1,0 +1,271 @@
+name: Daily Link Checker
+
+on:
+  schedule:
+    # Run daily at 9:00 AM UTC
+    - cron: '0 9 * * *'
+  workflow_dispatch: # Allow manual triggering
+  push:
+    paths:
+      - 'README.md'
+      - '.github/workflows/link-checker.yml'
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write # To create issues for broken links
+      
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        
+    - name: Install dependencies
+      run: |
+        npm init -y
+        npm install axios cheerio markdown-link-extractor
+        
+    - name: Create link checker script
+      run: |
+        cat > check-links.js << 'EOF'
+        const fs = require('fs');
+        const axios = require('axios');
+        const markdownLinkExtractor = require('markdown-link-extractor');
+        
+        class LinkChecker {
+          constructor() {
+            this.brokenLinks = [];
+            this.successfulLinks = [];
+            this.timeoutLinks = [];
+            this.totalChecked = 0;
+          }
+        
+          async checkLink(url, maxRetries = 2) {
+            for (let attempt = 1; attempt <= maxRetries; attempt++) {
+              try {
+                console.log(`Checking: ${url} (attempt ${attempt}/${maxRetries})`);
+                
+                const response = await axios.get(url, {
+                  timeout: 15000, // 15 second timeout
+                  headers: {
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                    'Accept-Language': 'en-US,en;q=0.5',
+                    'Accept-Encoding': 'gzip, deflate',
+                    'Connection': 'keep-alive',
+                  },
+                  maxRedirects: 5,
+                  validateStatus: function (status) {
+                    return status >= 200 && status < 400; // Accept 2xx and 3xx status codes
+                  }
+                });
+                
+                this.successfulLinks.push({
+                  url: url,
+                  status: response.status,
+                  responseTime: Date.now()
+                });
+                
+                console.log(`✓ ${url} - Status: ${response.status}`);
+                return true;
+                
+              } catch (error) {
+                if (attempt === maxRetries) {
+                  const errorInfo = {
+                    url: url,
+                    error: error.message,
+                    code: error.code,
+                    status: error.response?.status || 'No response'
+                  };
+                  
+                  if (error.code === 'ECONNABORTED' || error.message.includes('timeout')) {
+                    this.timeoutLinks.push(errorInfo);
+                    console.log(`⏱️ ${url} - Timeout`);
+                  } else {
+                    this.brokenLinks.push(errorInfo);
+                    console.log(`✗ ${url} - Error: ${error.message}`);
+                  }
+                  return false;
+                } else {
+                  console.log(`Retrying ${url} in 2 seconds...`);
+                  await new Promise(resolve => setTimeout(resolve, 2000));
+                }
+              }
+            }
+          }
+        
+          extractLinksFromMarkdown(content) {
+            const links = markdownLinkExtractor(content);
+            // Filter out internal links, mailto links, and duplicates
+            const filteredLinks = [...new Set(links.filter(link => 
+              link.startsWith('http://') || link.startsWith('https://')
+            ))];
+            return filteredLinks;
+          }
+        
+          async checkAllLinks() {
+            try {
+              // Read README.md
+              const readmeContent = fs.readFileSync('README.md', 'utf8');
+              const links = this.extractLinksFromMarkdown(readmeContent);
+              
+              console.log(`Found ${links.length} unique links to check`);
+              this.totalChecked = links.length;
+              
+              // Check links with some delay to avoid overwhelming servers
+              for (let i = 0; i < links.length; i++) {
+                await this.checkLink(links[i]);
+                
+                // Add delay between requests to be respectful
+                if (i < links.length - 1) {
+                  await new Promise(resolve => setTimeout(resolve, 1000));
+                }
+              }
+              
+              this.generateReport();
+              
+            } catch (error) {
+              console.error('Error during link checking:', error);
+              process.exit(1);
+            }
+          }
+        
+          generateReport() {
+            const report = {
+              timestamp: new Date().toISOString(),
+              summary: {
+                totalChecked: this.totalChecked,
+                successful: this.successfulLinks.length,
+                broken: this.brokenLinks.length,
+                timeout: this.timeoutLinks.length
+              },
+              brokenLinks: this.brokenLinks,
+              timeoutLinks: this.timeoutLinks
+            };
+            
+            // Write detailed report to file
+            fs.writeFileSync('link-check-report.json', JSON.stringify(report, null, 2));
+            
+            // Generate summary for GitHub Actions
+            console.log('\n=== LINK CHECK SUMMARY ===');
+            console.log(`Total links checked: ${this.totalChecked}`);
+            console.log(`✓ Successful: ${this.successfulLinks.length}`);
+            console.log(`✗ Broken: ${this.brokenLinks.length}`);
+            console.log(`⏱️ Timeout: ${this.timeoutLinks.length}`);
+            
+            if (this.brokenLinks.length > 0) {
+              console.log('\n=== BROKEN LINKS ===');
+              this.brokenLinks.forEach(link => {
+                console.log(`❌ ${link.url} - ${link.error} (Status: ${link.status})`);
+              });
+            }
+            
+            if (this.timeoutLinks.length > 0) {
+              console.log('\n=== TIMEOUT LINKS ===');
+              this.timeoutLinks.forEach(link => {
+                console.log(`⏱️ ${link.url} - ${link.error}`);
+              });
+            }
+            
+            // Set GitHub Actions outputs
+            if (process.env.GITHUB_OUTPUT) {
+              const output = `broken_count=${this.brokenLinks.length}\ntimeout_count=${this.timeoutLinks.length}\ntotal_issues=${this.brokenLinks.length + this.timeoutLinks.length}`;
+              fs.appendFileSync(process.env.GITHUB_OUTPUT, output);
+            }
+          }
+        }
+        
+        // Run the link checker
+        const checker = new LinkChecker();
+        checker.checkAllLinks();
+        EOF
+        
+    - name: Run link checker
+      id: check-links
+      run: node check-links.js
+      
+    - name: Upload report artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: link-check-report-${{ github.run_number }}
+        path: link-check-report.json
+        
+    - name: Create issue for broken links
+      if: steps.check-links.outputs.total_issues > 0
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          const report = JSON.parse(fs.readFileSync('link-check-report.json', 'utf8'));
+          
+          let issueBody = `# 🔗 Link Check Report\n\n`;
+          issueBody += `**Report generated:** ${report.timestamp}\n\n`;
+          issueBody += `## Summary\n`;
+          issueBody += `- Total links checked: ${report.summary.totalChecked}\n`;
+          issueBody += `- ✅ Working links: ${report.summary.successful}\n`;
+          issueBody += `- ❌ Broken links: ${report.summary.broken}\n`;
+          issueBody += `- ⏱️ Timeout links: ${report.summary.timeout}\n\n`;
+          
+          if (report.brokenLinks.length > 0) {
+            issueBody += `## 🚨 Broken Links\n\n`;
+            report.brokenLinks.forEach(link => {
+              issueBody += `- ❌ [${link.url}](${link.url})\n`;
+              issueBody += `  - **Error:** ${link.error}\n`;
+              issueBody += `  - **Status:** ${link.status}\n\n`;
+            });
+          }
+          
+          if (report.timeoutLinks.length > 0) {
+            issueBody += `## ⏱️ Timeout Links\n\n`;
+            report.timeoutLinks.forEach(link => {
+              issueBody += `- ⏱️ [${link.url}](${link.url})\n`;
+              issueBody += `  - **Error:** ${link.error}\n\n`;
+            });
+          }
+          
+          issueBody += `\n---\n*This issue was automatically generated by the daily link checker workflow.*`;
+          
+          // Check if there's already an open issue for broken links
+          const issues = await github.rest.issues.listForRepo({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            state: 'open',
+            labels: 'broken-links'
+          });
+          
+          const existingIssue = issues.data.find(issue => 
+            issue.title.includes('Broken Links Detected')
+          );
+          
+          if (existingIssue) {
+            // Update existing issue
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: existingIssue.number,
+              body: `## Updated Link Check Report\n\n${issueBody}`
+            });
+            console.log(`Updated existing issue #${existingIssue.number}`);
+          } else {
+            // Create new issue
+            const issue = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `🚨 Broken Links Detected - ${new Date().toISOString().split('T')[0]}`,
+              body: issueBody,
+              labels: ['broken-links', 'automated']
+            });
+            console.log(`Created new issue #${issue.data.number}`);
+          }
+          
+    - name: Comment on success
+      if: steps.check-links.outputs.total_issues == 0
+      run: |
+        echo "🎉 All links are working properly!"
+        echo "Report uploaded as artifact for reference."
