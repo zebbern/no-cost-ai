@@ -7,8 +7,16 @@
 ![Free‑AI](https://img.shields.io/badge/Free--AI-List-blue)
 ![Status](https://img.shields.io/badge/Status-Active-green)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
+</div>
 
-**[Leaderboards](#leaderboards)** | **[Chat Interfaces](#chat-interfaces)** | **[Media Generation (Image/Video)](#media-generation)** | **[Voice & Music](#voice--music)** | **[AI IDEs](#ai-ides)** | **[Developer APIs](#developer-apis--platforms)** | **[Contributing](#contributing)**
+### Quick Clicks
+- **[Leaderboards](#leaderboards)** 
+- **[Chat Interfaces](#chat-interfaces)**
+- **[Media Generation (Image/Video)](#media-generation)**
+- **[Voice & Music](#voice--music)**
+- **[AI IDEs](#ai-ides)**
+- **[Developer APIs](#developer-apis--platforms)**
+- **[Contributing](#contributing)**
 
 </div>
 
