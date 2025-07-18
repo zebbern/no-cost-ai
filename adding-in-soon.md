@@ -1,6 +1,6 @@
 - https://www.useinvent.com/ | signup required but very good
 - https://freeaichatplayground.com/ | decent but alot of non working models | repo https://github.com/bypepe77/Freeaichatplayground-client
-
+- https://app.lumioai.tech | access to 5+ models limited tokens no signup
 
 ### Free api no signup
 - https://github.com/mfoud444/ollamafreeapi/
