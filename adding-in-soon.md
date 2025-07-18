@@ -37,3 +37,7 @@ another cli but provides free use of claude 4 cuz of beta
 ## ai leaderboard
 
 - https://artificialanalysis.ai/
+
+### openrouter free list 
+
+- https://openrouter.ai/models?fmt=cards&order=top-weekly&q=free
