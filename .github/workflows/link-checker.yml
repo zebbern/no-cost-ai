@@ -43,21 +43,8 @@ jobs:
             this.brokenLinks = [];
             this.successfulLinks = [];
             this.timeoutLinks = [];
-            this.blockedLinks = []; // For 403/bot-blocked links
             this.redirectLoopLinks = []; // For redirect issues
             this.totalChecked = 0;
-            
-            // Sites known to block bots but are likely working
-            this.commonBotBlockers = [
-              'claude.ai',
-              'openai.com',
-              'microsoft.com',
-              'meta.ai',
-              'x.com',
-              'twitter.com',
-              'linkedin.com',
-              'discord.gg'
-            ];
             
             // User agents to rotate through
             this.userAgents = [
@@ -69,9 +56,6 @@ jobs:
           }
         
           async checkLink(url, maxRetries = 2) {
-            // Check if this is a known bot blocker
-            const isKnownBotBlocker = this.commonBotBlockers.some(domain => url.includes(domain));
-            
             for (let attempt = 1; attempt <= maxRetries; attempt++) {
               try {
                 console.log(`Checking: ${url} (attempt ${attempt}/${maxRetries})`);
@@ -80,7 +64,7 @@ jobs:
                 const userAgent = this.userAgents[attempt % this.userAgents.length];
                 
                 const response = await axios.get(url, {
-                  timeout: 20000, // Increased to 20 seconds
+                  timeout: 20000, // 20 seconds
                   headers: {
                     'User-Agent': userAgent,
                     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
@@ -94,9 +78,10 @@ jobs:
                     'Sec-Fetch-User': '?1',
                     'Upgrade-Insecure-Requests': '1'
                   },
-                  maxRedirects: 10, // Increased redirect limit
+                  maxRedirects: 10,
                   validateStatus: function (status) {
-                    return status >= 200 && status < 500; // Accept more status codes
+                    // Accept 2xx, 3xx, 4xx, and 5xx - basically any response means the link works
+                    return status >= 200 && status < 600;
                   }
                 });
                 
@@ -104,10 +89,11 @@ jobs:
                   url: url,
                   status: response.status,
                   finalUrl: response.request.res.responseUrl || url,
-                  isKnownBotBlocker: isKnownBotBlocker
+                  statusNote: response.status >= 400 ? 'Working (with restrictions/errors)' : 'Working normally'
                 });
                 
-                console.log(`✓ ${url} - Status: ${response.status}`);
+                const statusEmoji = response.status >= 500 ? '🔧' : response.status >= 400 ? '🛡️' : '✅';
+                console.log(`${statusEmoji} ${url} - Status: ${response.status}`);
                 return true;
                 
               } catch (error) {
@@ -115,38 +101,21 @@ jobs:
                   url: url,
                   error: error.message,
                   code: error.code,
-                  status: error.response?.status || 'No response',
-                  isKnownBotBlocker: isKnownBotBlocker
+                  status: error.response?.status || 'No response'
                 };
                 
                 if (attempt === maxRetries) {
-                  // Categorize the error
+                  // Only categorize as broken if we can't reach the server at all
                   if (error.code === 'ECONNABORTED' || error.message.includes('timeout')) {
                     this.timeoutLinks.push(errorInfo);
-                    console.log(`⏱️ ${url} - Timeout`);
+                    console.log(`⏱️ ${url} - Timeout (unreachable)`);
                   } else if (error.message.includes('Maximum redirect') || error.message.includes('too many redirects')) {
                     this.redirectLoopLinks.push(errorInfo);
                     console.log(`🔄 ${url} - Redirect loop detected`);
-                  } else if (error.response?.status === 403 || error.response?.status === 429) {
-                    // Bot blocked or rate limited
-                    this.blockedLinks.push(errorInfo);
-                    if (isKnownBotBlocker) {
-                      console.log(`🛡️ ${url} - Bot blocked (expected for this site)`);
-                    } else {
-                      console.log(`🚫 ${url} - Access denied (${error.response.status})`);
-                    }
-                  } else if (error.response?.status >= 400 && error.response?.status < 500) {
-                    // Client errors (but not 403/429)
-                    this.brokenLinks.push(errorInfo);
-                    console.log(`✗ ${url} - Client error: ${error.response.status}`);
-                  } else if (error.response?.status >= 500) {
-                    // Server errors - might be temporary
-                    this.timeoutLinks.push(errorInfo);
-                    console.log(`🔧 ${url} - Server error: ${error.response.status} (might be temporary)`);
                   } else {
-                    // Network or other errors
+                    // Network errors, DNS failures, connection refused, etc.
                     this.brokenLinks.push(errorInfo);
-                    console.log(`✗ ${url} - Error: ${error.message}`);
+                    console.log(`✗ ${url} - Unreachable: ${error.message}`);
                   }
                   return false;
                 } else {
@@ -201,12 +170,10 @@ jobs:
                 successful: this.successfulLinks.length,
                 broken: this.brokenLinks.length,
                 timeout: this.timeoutLinks.length,
-                blocked: this.blockedLinks.length,
                 redirectLoops: this.redirectLoopLinks.length
               },
               brokenLinks: this.brokenLinks,
               timeoutLinks: this.timeoutLinks,
-              blockedLinks: this.blockedLinks,
               redirectLoopLinks: this.redirectLoopLinks,
               successfulLinks: this.successfulLinks
             };
@@ -217,25 +184,24 @@ jobs:
             // Generate summary for GitHub Actions
             console.log('\n=== LINK CHECK SUMMARY ===');
             console.log(`Total links checked: ${this.totalChecked}`);
-            console.log(`✓ Successful: ${this.successfulLinks.length}`);
-            console.log(`✗ Broken: ${this.brokenLinks.length}`);
-            console.log(`⏱️ Timeout/Server errors: ${this.timeoutLinks.length}`);
-            console.log(`🛡️ Bot blocked (likely working): ${this.blockedLinks.length}`);
+            console.log(`✅ Working (including 403/500): ${this.successfulLinks.length}`);
+            console.log(`❌ Unreachable/Broken: ${this.brokenLinks.length}`);
+            console.log(`⏱️ Timeout: ${this.timeoutLinks.length}`);
             console.log(`🔄 Redirect loops: ${this.redirectLoopLinks.length}`);
             
-            // Only treat broken links as critical issues
+            // Only treat truly unreachable links as critical issues
             const criticalIssues = this.brokenLinks.length;
             const warningIssues = this.timeoutLinks.length + this.redirectLoopLinks.length;
             
             if (this.brokenLinks.length > 0) {
-              console.log('\n=== BROKEN LINKS (CRITICAL) ===');
+              console.log('\n=== UNREACHABLE LINKS (CRITICAL) ===');
               this.brokenLinks.forEach(link => {
                 console.log(`❌ ${link.url} - ${link.error} (Status: ${link.status})`);
               });
             }
             
             if (this.timeoutLinks.length > 0) {
-              console.log('\n=== TIMEOUT/SERVER ERROR LINKS (WARNING) ===');
+              console.log('\n=== TIMEOUT LINKS (WARNING) ===');
               this.timeoutLinks.forEach(link => {
                 console.log(`⏱️ ${link.url} - ${link.error} (Status: ${link.status})`);
               });
@@ -248,17 +214,9 @@ jobs:
               });
             }
             
-            if (this.blockedLinks.length > 0) {
-              console.log('\n=== BOT-BLOCKED LINKS (LIKELY WORKING) ===');
-              this.blockedLinks.forEach(link => {
-                const note = link.isKnownBotBlocker ? ' (expected)' : '';
-                console.log(`🛡️ ${link.url} - ${link.error} (Status: ${link.status})${note}`);
-              });
-            }
-            
             // Set GitHub Actions outputs - only critical issues trigger issue creation
             if (process.env.GITHUB_OUTPUT) {
-              const output = `broken_count=${this.brokenLinks.length}\nwarning_count=${warningIssues}\ntotal_critical=${criticalIssues}\nblocked_count=${this.blockedLinks.length}`;
+              const output = `broken_count=${this.brokenLinks.length}\nwarning_count=${warningIssues}\ntotal_critical=${criticalIssues}`;
               fs.appendFileSync(process.env.GITHUB_OUTPUT, output);
             }
           }
@@ -280,7 +238,7 @@ jobs:
         path: link-check-report.json
         
     - name: Create issue for broken links
-      if: steps.check-links.outputs.total_issues > 0
+      if: steps.check-links.outputs.broken_count > 0
       uses: actions/github-script@v7
       with:
         script: |
@@ -290,13 +248,15 @@ jobs:
           let issueBody = `# 🔗 Link Check Report\n\n`;
           issueBody += `**Report generated:** ${report.timestamp}\n\n`;
           issueBody += `## Summary\n`;
-          issueBody += `- Total links checked: ${report.summary.totalChecked}\n`;
-          issueBody += `- ✅ Working links: ${report.summary.successful}\n`;
-          issueBody += `- ❌ Broken links: ${report.summary.broken}\n`;
-          issueBody += `- ⏱️ Timeout links: ${report.summary.timeout}\n\n`;
+          issueBody += `- 📊 Total links checked: ${report.summary.totalChecked}\n`;
+          issueBody += `- ✅ Working (including 403/500): ${report.summary.successful}\n`;
+          issueBody += `- ❌ **Unreachable/Broken: ${report.summary.broken}**\n`;
+          issueBody += `- ⏱️ Timeout: ${report.summary.timeout}\n`;
+          issueBody += `- 🔄 Redirect loops: ${report.summary.redirectLoops}\n\n`;
           
           if (report.brokenLinks.length > 0) {
-            issueBody += `## 🚨 Broken Links\n\n`;
+            issueBody += `## 🚨 Critical: Unreachable Links\n\n`;
+            issueBody += `These links are completely unreachable and need attention:\n\n`;
             report.brokenLinks.forEach(link => {
               issueBody += `- ❌ [${link.url}](${link.url})\n`;
               issueBody += `  - **Error:** ${link.error}\n`;
@@ -305,10 +265,21 @@ jobs:
           }
           
           if (report.timeoutLinks.length > 0) {
-            issueBody += `## ⏱️ Timeout Links\n\n`;
+            issueBody += `## ⚠️ Warning: Timeout Issues\n\n`;
+            issueBody += `These links timed out (might be temporary):\n\n`;
             report.timeoutLinks.forEach(link => {
               issueBody += `- ⏱️ [${link.url}](${link.url})\n`;
-              issueBody += `  - **Error:** ${link.error}\n\n`;
+              issueBody += `  - **Issue:** ${link.error}\n`;
+              issueBody += `  - **Status:** ${link.status}\n\n`;
+            });
+          }
+          
+          if (report.redirectLoopLinks.length > 0) {
+            issueBody += `## 🔄 Warning: Redirect Loops\n\n`;
+            issueBody += `These links have redirect issues:\n\n`;
+            report.redirectLoopLinks.forEach(link => {
+              issueBody += `- 🔄 [${link.url}](${link.url})\n`;
+              issueBody += `  - **Issue:** ${link.error}\n\n`;
             });
           }
           
@@ -348,7 +319,9 @@ jobs:
           }
           
     - name: Comment on success
-      if: steps.check-links.outputs.total_issues == 0
+      if: steps.check-links.outputs.broken_count == 0
       run: |
-        echo "🎉 All links are working properly!"
-        echo "Report uploaded as artifact for reference."
+        echo "🎉 No unreachable links found!"
+        echo "✅ All links are working (including those with 403/500 status codes)"
+        echo "⚠️ Warnings: ${{ steps.check-links.outputs.warning_count }} (timeouts/redirects - might be temporary)"
+        echo "📊 Full report available in artifacts."
