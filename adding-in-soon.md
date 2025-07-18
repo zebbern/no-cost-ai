@@ -32,3 +32,8 @@ may be too hard for beginners
 
 another cli but provides free use of claude 4 cuz of beta
 - https://rovodevagents-beta.atlassian.net/wiki/external/OWEyMmMwZjllYjgyNDQzNjgyNWNiN2VhYjQ3MGY4MzI
+
+
+## ai leaderboard
+
+- https://artificialanalysis.ai/
