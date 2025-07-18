@@ -4,8 +4,12 @@
 - https://g4f.dev | access not many models no signup
 - https://flowgpt.com
 
+## free api sign up and loads of other things
+https://pollinations.ai
+
 ### Free api no signup
 - https://github.com/mfoud444/ollamafreeapi/
+
 
 
 Chat/generate video&image no signup
