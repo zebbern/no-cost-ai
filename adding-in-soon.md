@@ -3,7 +3,7 @@
 - https://app.lumioai.tech | access to 5+ models limited tokens no signup
 - https://g4f.dev | access not many models no signup
 - https://flowgpt.com
-- https://lobechat.com/ | many free models 1million tokens or smt free
+- https://lobechat.com/ | many free models 1million tokens or smt free | https://github.com/lobehub/lobe-chat
 
 ## free api sign up and loads of other things
 https://pollinations.ai
@@ -44,4 +44,7 @@ another cli but provides free use of claude 4 cuz of beta
 
 ## No Signup Multi Model Usage
 - https://umint-ai.hf.space/
-- https://mirexa.vercel.app/ 
+- https://mirexa.vercel.app/
+
+## Compatible with any api ai model
+- https://github.com/danny-avila/LibreChat?
