@@ -45,3 +45,7 @@ another cli but provides free use of claude 4 cuz of beta
 ### openrouter free list 
 
 - https://openrouter.ai/models?fmt=cards&order=top-weekly&q=free
+
+## No Signup Multi Model Usage
+- https://umint-ai.hf.space/
+- https://mirexa.vercel.app/ 
