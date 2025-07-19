@@ -3,6 +3,7 @@
 - https://app.lumioai.tech | access to 5+ models limited tokens no signup
 - https://g4f.dev | access not many models no signup
 - https://flowgpt.com
+- https://lobechat.com/ | many free models 1million tokens or smt free
 
 ## free api sign up and loads of other things
 https://pollinations.ai
@@ -20,11 +21,6 @@ Chat/generate video&image no signup
 
 Free no sign up foto ai edits
 - https://www.fotor.com/
-
-
-Sign up required decent website builder with ai free tho
-- https://durable.co/
-- 
 
 
 
