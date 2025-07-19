@@ -47,4 +47,5 @@ another cli but provides free use of claude 4 cuz of beta
 - https://mirexa.vercel.app/
 
 ## Compatible with any api ai model
-- https://github.com/danny-avila/LibreChat?
+- https://github.com/danny-avila/LibreChat
+- https://github.com/open-webui/open-webui
