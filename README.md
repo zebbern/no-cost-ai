@@ -74,12 +74,12 @@
 | [meta.ai](https://www.meta.ai) | `Llama 4` |`Unlimited/Unkown`|
 | [sharedchat.cn](https://sharedchat.cn)|`gpt-4o`, `o3`, `o3-pro`, `o4-mini`, `o4-mini-high`|`Unlimited` but may be hard to get a responce as many others use it aswell but it really does work|
 | [phind.com](https://www.phind.com) | `Phind-70B`|`Unlimited`|
-| [groq.com](https://groq.com) | `15+| `30 requests` / min, `40 000 tokens` / min|
+| [groq.com](https://groq.com) | `15+| `30 requests` / min, `40 000 tokens` / min|
 | [app.lumioai.tech](https://app.lumioai.tech/) |`gpt-4o-mini`, `gpt-4.1-nano`, `gemini-2.0-flash`, `deepseek-v3-us-hosted`, `llama-4-scout-17b`, `sonar`|reasonable usage limits they say|
-| [chatgpt.com](https://chatgpt.com) |`GPT 3.5`, `GPT‑4 o`| `5-10 messages` of GPT 4o |
+| [chatgpt.com](https://chatgpt.com) |`GPT 3.5`, `GPT‑4 o`| `5-10 messages` of GPT 4o |
 | [chat.mistral.ai](https://chat.mistral.ai) |`Le Chat`| `10 Messages` Resets Every 24h |
 | [perplexity.ai](https://perplexity.ai) |`GPT 3.5`, `GPT-4.1`, `Claude 4.0 Sonnet`|<kbd>• 3 Pro searches per day/unlimited basic quick searches. <br><br>• Up to 5 follow-up questions every 4 hours. <br><br>• 3 File uploads per day.<br><br>• Daily limits reset at midnight PT (UTC-7 or UTC-8).<kbd>  |
-| [grok.com](https://grok.com/chat) |`Grok 3` | `3 messages` every 2 h|
+| [grok.com](https://grok.com/chat) |`Grok 3` | `3 messages` every 2 h|
 | [flowgpt.com](https://flowgpt.com/) | `Many community made gpts free to use`|Should be Unlimited|
 | [pi.ai](https://pi.ai) |`Large Language Model called Inflection-2.5` | Unlimited |
 | [sur.pollinations.ai](https://sur.pollinations.ai/) |`openai`, `sur`, `sur-mistral`, `claude`, `mistral`, `mistral-large`, `command-r`, `unity`, `rtist`, `searchgpt`| Unlimited|
@@ -99,7 +99,7 @@
 | [gemini.google.com](https://gemini.google.com) | `gemini-2.5-fast` | `32,000 tokens`, `5-10 prompts` per day, No Image-File-Audio-Generation |
 | [copilot.microsoft.com](https://copilot.microsoft.com) | `gpt-5` | Unlimited, `1` image per day|
 | [theoldllm.vercel.app](https://theoldllm.vercel.app/) | Unknown | Unknown |
-
+| [tiamat.live](https://tiamat.live) | `llama-3.3-70b` (chat & summarization), algorithmic image gen, `Kokoro` TTS | `5 chat`/day, `3 summarize`/day, `2 image`/day, `3 TTS`/day — no signup, no API key. [Docs](https://tiamat.live/docs) |
 
 
 
@@ -113,6 +113,7 @@
 | [Vheer.com](https://vheer.com/) | `vheer's propritary ai` | Unlimited, No Watermark|
 | [perchance.org/wtr90dexsn](https://perchance.org/wtr90dexsn) |Uses `pollinations` api | `Unlimited` only image gen, No Watermark |
 | [fotor.com](https://www.fotor.com/) |`Unknown` Uses ai to edit picture option is available | Unlimited editing |
+| [tiamat.live/generate](https://tiamat.live/generate) | Algorithmic image generation (6 styles) | `2 images`/day per IP, no signup. [Docs](https://tiamat.live/docs) |
 
 
 ### Voice & Music
@@ -121,6 +122,7 @@
 | [ttsmp3.com](https://ttsmp3.com) | Google/Microsoft TTS voices | Short clips, daily cap |
 | [voicegenerator.io](https://voicegenerator.io) | Multiple TTS voices | Length capped |
 | [fakeyou.com](https://fakeyou.com) | Community TTS models | Queue based, rate limited |
+| [tiamat.live/synthesize](https://tiamat.live/synthesize) | `Kokoro` TTS | `3 requests`/day per IP, no signup. [Docs](https://tiamat.live/docs) |
 
 ### AI IDEs
 | Link | Free Models | Limits |
@@ -180,7 +182,7 @@
 ### AI IDEs
 | Link | Free Models | Limits |
 | --- | --- | --- |
-| [Rovo Dev Agents](https://rovodevagents-beta.atlassian.net/wiki/external/OWEyMmMwZjllYjgyNDQzNjgyNWNiN2VhYjQ3MGY4MzI) |`claude sonnet 4`, `claude opus 4` because of beta program |20 M Claude‑4 Sonnet tokens / day|
+| [Rovo Dev Agents](https://rovodevagents-beta.atlassian.net/wiki/external/OWEyMmMwZjllYjgyNDQzNjgyNWNiN2VhYjQ3MGY4MzI) |`claude sonnet 4`, `claude opus 4` because of beta program |20 M Claude‑4 Sonnet tokens / day|
 | [kiro.dev](https://kiro.dev) |`Gemini 2.5 flash/pro`||
 
 ### Developer APIs & Platforms
