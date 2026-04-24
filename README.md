@@ -69,6 +69,7 @@
 
 | Link | Free Models | Limits |
 | --- | --- | --- |
+| [chatwithai.app](https://chatwithai.app/) | gpt-4o |`Unlimited/Unknown`|
 | [lmarena.ai](https://lmarena.ai/) | 40+|`Unlimited`|
 | [g4f.dev](https://g4f.dev/) | `200+ tons of local models`|`Unlimited`|
 | [meta.ai](https://www.meta.ai) | `Llama 4` |`Unlimited/Unkown`|
