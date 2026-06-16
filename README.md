@@ -163,6 +163,7 @@
 | [krea.ai](https://www.krea.ai) | `krea-1`, `flux.1-krea`, and other SD/Flux based models | 50 generations per day, with Watermark |
 | [app.pixverse.ai](https://app.pixverse.ai) | PixVerse video | 50-60 per day, 540p or 750p output, with Watermark |
 | [ideogram.ai](https://ideogram.ai) | `ideogram-3.0`, `ideogram-3.0-turbo` | 10 credits per week (40 images per week), with Watermark |
+| [seedream4.video](https://seedream4.video/) | `seedream-5.0`, `seedream-4.5`, `seedream-4.0`, `kling-2.1` (image-to-video) | Free tier available; multi-model AI image generation by ByteDance |
 | [genmo.ai](https://www.genmo.ai) | `mochi-1` | 50 credits per month, with Watermark |
 
 ### Voice & Music
