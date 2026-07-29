@@ -54,6 +54,11 @@ jobs:
               'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Safari/605.1.15'
             ];
           }
+
+          isHeaderOverflowError(error) {
+            return error.code === 'HPE_HEADER_OVERFLOW'
+              || (typeof error.message === 'string' && /header overflow/i.test(error.message));
+          }
         
           async checkLink(url, maxRetries = 2) {
             for (let attempt = 1; attempt <= maxRetries; attempt++) {
@@ -103,6 +108,17 @@ jobs:
                   code: error.code,
                   status: error.response?.status || 'No response'
                 };
+
+                if (this.isHeaderOverflowError(error)) {
+                  this.successfulLinks.push({
+                    url,
+                    status: 'Header overflow',
+                    finalUrl: error.response?.request?.res?.responseUrl || url,
+                    statusNote: 'Working (response headers exceeded parser limit)'
+                  });
+                  console.log(`🛡️ ${url} - Reachable but response headers exceeded parser limit`);
+                  return true;
+                }
                 
                 if (attempt === maxRetries) {
                   // Only categorize as broken if we can't reach the server at all
