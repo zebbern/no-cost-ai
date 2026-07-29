@@ -104,7 +104,7 @@ jobs:
                   status: error.response?.status || 'No response'
                 };
                 const isHeaderOverflow = error.code === 'HPE_HEADER_OVERFLOW'
-                  || /header overflow/i.test(error.message || '');
+                  || (typeof error.message === 'string' && /header overflow/i.test(error.message));
 
                 if (isHeaderOverflow) {
                   this.successfulLinks.push({
