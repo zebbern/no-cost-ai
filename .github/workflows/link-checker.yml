@@ -107,10 +107,11 @@ jobs:
                   || /header overflow/i.test(error.message || '');
 
                 if (isHeaderOverflow) {
+                  const finalUrl = url;
                   this.successfulLinks.push({
-                    url: url,
+                    url,
                     status: 'Header overflow',
-                    finalUrl: url,
+                    finalUrl,
                     statusNote: 'Working (response headers exceeded parser limit)'
                   });
                   console.log(`🛡️ ${url} - Reachable but response headers exceeded parser limit`);
