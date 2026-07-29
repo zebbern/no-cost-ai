@@ -103,8 +103,10 @@ jobs:
                   code: error.code,
                   status: error.response?.status || 'No response'
                 };
+                const isHeaderOverflow = error.code === 'HPE_HEADER_OVERFLOW'
+                  || /header overflow/i.test(error.message || '');
 
-                if (error.code === 'HPE_HEADER_OVERFLOW' || error.message.includes('Header overflow')) {
+                if (isHeaderOverflow) {
                   this.successfulLinks.push({
                     url: url,
                     status: 'Header overflow',
