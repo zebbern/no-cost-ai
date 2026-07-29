@@ -103,6 +103,17 @@ jobs:
                   code: error.code,
                   status: error.response?.status || 'No response'
                 };
+
+                if (error.code === 'HPE_HEADER_OVERFLOW' || error.message.includes('Header overflow')) {
+                  this.successfulLinks.push({
+                    url: url,
+                    status: 'Header overflow',
+                    finalUrl: url,
+                    statusNote: 'Working (response headers exceeded parser limit)'
+                  });
+                  console.log(`🛡️ ${url} - Reachable but response headers exceeded parser limit`);
+                  return true;
+                }
                 
                 if (attempt === maxRetries) {
                   // Only categorize as broken if we can't reach the server at all
