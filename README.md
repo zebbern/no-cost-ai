@@ -175,7 +175,7 @@
 ### AI IDEs
 | Link | Free Models | Limits |
 | --- | --- | --- |
-| [Rovo Dev Agents](https://rovodevagents-beta.atlassian.net/wiki/external/OWEyMmMwZjllYjgyNDQzNjgyNWNiN2VhYjQ3MGY4MzI) |`claude sonnet 4`, `claude opus 4` because of beta program |20 M Claude‑4 Sonnet tokens / day|
+| [Rovo Dev Agents](https://www.atlassian.com/software/rovo-dev) |`claude sonnet 4`, `claude opus 4` because of beta program |20 M Claude‑4 Sonnet tokens / day|
 | [kiro.dev](https://kiro.dev) |`Gemini 2.5 flash/pro`||
 
 ### Developer APIs & Platforms
