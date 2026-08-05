@@ -73,7 +73,6 @@
 | [g4f.dev](https://g4f.dev/) | `200+ tons of local models`|`Unlimited`|
 | [meta.ai](https://www.meta.ai) | `Llama 4` |`Unlimited/Unkown`|
 | [sharedchat.cn](https://sharedchat.cn)|`gpt-4o`, `o3`, `o3-pro`, `o4-mini`, `o4-mini-high`|`Unlimited` but may be hard to get a responce as many others use it aswell but it really does work|
-| [phind.com](https://www.phind.com) | `Phind-70B`|`Unlimited`|
 | [groq.com](https://groq.com) | `15+| `30 requests` / min, `40 000 tokens` / min|
 | [chatgpt.com](https://chatgpt.com) |`GPT 3.5`, `GPT‑4 o`| `5-10 messages` of GPT 4o |
 | [chat.mistral.ai](https://chat.mistral.ai) |`Le Chat`| `10 Messages` Resets Every 24h |
