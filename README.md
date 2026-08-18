@@ -149,7 +149,6 @@
 | Link | Free Models | Limits |
 | --- | --- | --- |
 | [bing.com](https://www.bing.com/images/create) | `dall-e-3`, `mai-image-1`, `gpt-4o`| Unlimited |
-| [cv.cm/v](https://cv.cm/v) | queue-free `Seedance-2.0` text/image-to-video, `gpt-image-2`/`Seedream` image gen | `100 credits` on signup, No Watermark |
 | [designer.microsoft.com](https://designer.microsoft.com) | `dall-e-3`| `15-16 montlhy credits`, For Non-Comercial/Personal Use Only|
 | [leonardo.ai](https://leonardo.ai) | `leonardo-pheonix`, `leonardo-vision-xl`, `leonardo-diffusion-xl`, `leonardo-lighting-xl`, `leonardo-kino-xl`, `leonardo-anime-xl`, `lucid-origin`, `lucid-r[...]
 | [firefly.adobe.com](https://firefly.adobe.com) | `firefly-image-model-5`, `firefly-video-model`, and other pro models| 25 credits one time|
