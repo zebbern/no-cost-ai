@@ -15,11 +15,10 @@
 ![No Sign Up Required](https://img.shields.io/badge/No--Signup--Required-darkgreen)
 | Topic | Links |
 | --- | --- |
-| [💬 Chat](#chat-interfaces)| 27
+| [💬 Chat](#chat-interfaces)| 21
 | [🎞️ Media](#media-generation)| 5
 | [🗣️ Voice](#voice--music)| 3
-| [🎞️ Media](#media-generation)| 4
-| [🔧 APIs](#developer-apis--platforms) | 3
+| [🔧 APIs](#developer-apis--platforms) | 4
 
 </h2> 
 </kbd>
@@ -33,11 +32,11 @@
 
 | Topic | Links |
 | --- | --- |
-| [💬 Chat](#chat-interfaces-1) | 14
-| [🎞️ Media](#media-generation-1) | 11
+| [💬 Chat](#chat-interfaces-1) | 13
+| [🎞️ Media](#media-generation-1) | 12
 | [🗣️ Voice](#voice--music-1) | 4
 | [🖥️ IDEs](#ai-ides-1) | 2
-| [🔧 APIs](#developer-apis--platforms-1) | 16
+| [🔧 APIs](#developer-apis--platforms-1) | 17
 </h2> 
 
 </kbd>
@@ -83,7 +82,7 @@
 | [heck.ai](https://heck.ai) |``deepseek-v3`, `deepseek-r1-pro`, `gemini-2.5-flash`, `chatgpt-4o-mini`, `chatgpt-4.1-mini`, `grok-3-mini`, `llama-4-scout`` | `50 query`/day, `5 Search` query/day, [...]
 | [freegpt.es](https://freegpt.es/) |  `gpt-4o`, `DeepSeek`, `Grok`, `Gemini` etc.. | `50 requests` per day or more |
 | [chat2.free2gpt.com](https://chat2.free2gpt.com/) | `Gemini` | Allow Alot of requests |
-| [chat4.free2gpt.com](https://chat4.free2gpt.com/) | `gpt-4o-mini`, `wbot-t1-mini`, `wbot-4-347b`, `deepseek-chat`, `deepseek-coder`, `ds-r1-distill-70b`, `wbot-2`, `wbot-2-friend`, `wbot-2-cat-v2`, `wbot-2-cat-m`, `gpt-4.[...]
+| [chat4.free2gpt.com](https://chat4.free2gpt.com/) | `gpt-4o-mini`, `wbot-t1-mini`, `wbot-4-347b`, `deepseek-chat`, `deepseek-coder`, `ds-r1-distill-70b`, `wbot-2`, `wbot-2-friend`, `wbot-2-cat-v[...]
 | [free.netfly.top](https://free.netfly.top/) | `GPT-40-mini` |Unlimited|
 | [chat.ai365vip.com](https://chat.ai365vip.com/en) |`GPT-4o` |Unlimited|
 | [kimi.com](https://kimi.com) |`K2`, `K1.5` | some usage more if you signup or host the model urself its opensource|
@@ -150,6 +149,7 @@
 | Link | Free Models | Limits |
 | --- | --- | --- |
 | [bing.com](https://www.bing.com/images/create) | `dall-e-3`, `mai-image-1`, `gpt-4o`| Unlimited |
+| [cv.cm/v](https://cv.cm/v) | queue-free `Seedance-2.0` text/image-to-video, `gpt-image-2`/`Seedream` image gen | `100 credits` on signup, No Watermark |
 | [designer.microsoft.com](https://designer.microsoft.com) | `dall-e-3`| `15-16 montlhy credits`, For Non-Comercial/Personal Use Only|
 | [leonardo.ai](https://leonardo.ai) | `leonardo-pheonix`, `leonardo-vision-xl`, `leonardo-diffusion-xl`, `leonardo-lighting-xl`, `leonardo-kino-xl`, `leonardo-anime-xl`, `lucid-origin`, `lucid-r[...]
 | [firefly.adobe.com](https://firefly.adobe.com) | `firefly-image-model-5`, `firefly-video-model`, and other pro models| 25 credits one time|
@@ -193,6 +193,7 @@
 | [ai-sdk.dev](https://ai-sdk.dev) | | |
 | [pollinations.ai](https://pollinations.ai/) |**Text:** `amazon-nova-micro`, `gemini-2.5-flash-lite`, `mistral`, `qwen-coder`, `openai`, `openai-fast`, `openai-large`, `gemini-3-flash`, `deepsee[...]
 | [llm7.io](https://llm7.io/) |`bidara`, `codestral-2405`, `codestral-2501`, `deepseek-r1-0528`, `elixposearch`, `gpt-4.1-nano-2025-04-14`, `gpt-4o-mini-2024-07-18`, `gpt-o3-2025-04-16`, `grok-3-[...]
+| [anyapi.ai](https://anyapi.ai) | `meta-llama/llama-3.3-70b-instruct`, `qwen/qwen3-coder`, `qwen/qwq-32b`, `google/gemma-4-it`, `nvidia/nemotron-3-super`, `mistralai/mistral-small-3.1`, `deepseek/deepseek-chat`, `cohere/north-mini-code`, `liquid/lfm-2.5`, `openai/gpt-oss-120b` and many more open-source models via API key | 20 req/min, 200 req/day, no credit card required |
 | [developer.puter.com](https://developer.puter.com/tutorials/free-unlimited-ai-api/) also [introduction](https://docs.puter.com/introduction/)|Too many to list..|None usage is account based|
 
 ---
