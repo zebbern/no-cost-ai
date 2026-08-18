@@ -71,30 +71,25 @@
 | --- | --- | --- |
 | [lmarena.ai](https://lmarena.ai/) | 40+|`Unlimited`|
 | [g4f.dev](https://g4f.dev/) | `200+ tons of local models`|`Unlimited`|
-| [meta.ai](https://www.meta.ai) | `Llama 4` |`Unlimited/Unkown`|
+| [t3.chat](https://t3.chat/) | `Multiple models` | `Unlimited/Unknown` |
 | [sharedchat.cn](https://sharedchat.cn)|`gpt-4o`, `o3`, `o3-pro`, `o4-mini`, `o4-mini-high`|`Unlimited` but may be hard to get a responce as many others use it aswell but it really does work|
-| [phind.com](https://www.phind.com) | `Phind-70B`|`Unlimited`|
-| [groq.com](https://groq.com) | `15+| `30 requests` / min, `40 000 tokens` / min|
-| [chatgpt.com](https://chatgpt.com) |`GPT 3.5`, `GPT‑4 o`| `5-10 messages` of GPT 4o |
+| [chatgpt.com](https://chatgpt.com) |`GPT 3.5`, `GPT‑4 o`| `5-10 messages` of GPT 4o |
 | [chat.mistral.ai](https://chat.mistral.ai) |`Le Chat`| `10 Messages` Resets Every 24h |
-| [perplexity.ai](https://perplexity.ai) |`GPT 3.5`, `GPT-4.1`, `Claude 4.0 Sonnet`|<kbd>• 3 Pro searches per day/unlimited basic quick searches. <br><br>• Up to 5 follow-up questions every 4 hours. <br><br>• 3 File uploads per day.<br><br>• Daily limits reset at midnight PT (UTC-7 or UTC-8).<kbd>  |
-| [grok.com](https://grok.com/chat) |`Grok 3` | `3 messages` every 2 h|
+| [perplexity.ai](https://perplexity.ai) |`GPT 3.5`, `GPT-4.1`, `Claude 4.0 Sonnet`|<kbd>• 3 Pro searches per day/unlimited basic quick searches. <br><br>• Up to 5 follow-up questions every 4 [...]
+| [grok.com](https://grok.com/chat) |`Grok 3` | `3 messages` every 2 h|
 | [flowgpt.com](https://flowgpt.com/) | `Many community made gpts free to use`|Should be Unlimited|
 | [pi.ai](https://pi.ai) |`Large Language Model called Inflection-2.5` | Unlimited |
 | [sur.pollinations.ai](https://sur.pollinations.ai/) |`openai`, `sur`, `sur-mistral`, `claude`, `mistral`, `mistral-large`, `command-r`, `unity`, `rtist`, `searchgpt`| Unlimited|
-| [umint-ai.hf.space](https://umint-ai.hf.space/) |`gpt-4o-mini`, `grok-3-mini`, `gpt-4.1-nano`, `deepseek-r1-0528`, `gpt-4.1`, `qwen2.5-coder-32b`, `bidara`, `mistral-small-3.1-24b`, `phi-4-mini-3.8b`| Unlimited |
-| [mirexa.vercel.app](https://mirexa.vercel.app/) |`deepseek-v3`, `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano`, `qwen2.5-coder-32b`, `mirexa`, `llama-4-scout-17b`, `mistral-small-3.1`, `phi-4`, `evil-mode` | Unlimited |
-| [heck.ai](https://heck.ai) |``deepseek-v3`, `deepseek-r1-pro`, `gemini-2.5-flash`, `chatgpt-4o-mini`, `chatgpt-4.1-mini`, `grok-3-mini`, `llama-4-scout`` | `50 query`/day, `5 Search` query/day, `1 AD`/day |
+| [heck.ai](https://heck.ai) |``deepseek-v3`, `deepseek-r1-pro`, `gemini-2.5-flash`, `chatgpt-4o-mini`, `chatgpt-4.1-mini`, `grok-3-mini`, `llama-4-scout`` | `50 query`/day, `5 Search` query/day, [...]
 | [freegpt.es](https://freegpt.es/) |  `gpt-4o`, `DeepSeek`, `Grok`, `Gemini` etc.. | `50 requests` per day or more |
 | [chat2.free2gpt.com](https://chat2.free2gpt.com/) | `Gemini` | Allow Alot of requests |
-| [chat2.free2gpt.com]() | `gpt-4o-mini`, `wbot-t1-mini`, `wbot-4-347b`, `deepseek-chat`, `deepseek-coder`, `ds-r1-distill-70b`, `wbot-2`, `wbot-2-friend`, `wbot-2-cat-v2`, `wbot-2-cat-m`, `gpt-4.1-mini`| Allow Alot of requests also has JB prompts and loads of inbuilt options|
+| [chat4.free2gpt.com](https://chat4.free2gpt.com/) | `gpt-4o-mini`, `wbot-t1-mini`, `wbot-4-347b`, `deepseek-chat`, `deepseek-coder`, `ds-r1-distill-70b`, `wbot-2`, `wbot-2-friend`, `wbot-2-cat-v2`, `wbot-2-cat-m`, `gpt-4.[...]
 | [free.netfly.top](https://free.netfly.top/) | `GPT-40-mini` |Unlimited|
 | [chat.ai365vip.com](https://chat.ai365vip.com/en) |`GPT-4o` |Unlimited|
 | [kimi.com](https://kimi.com) |`K2`, `K1.5` | some usage more if you signup or host the model urself its opensource|
 | [gemini.google.com](https://gemini.google.com) | `gemini-2.5-fast` | `32,000 tokens`, `5-10 prompts` per day, No Image-File-Audio-Generation |
 | [copilot.microsoft.com](https://copilot.microsoft.com) | `gpt-5` | Unlimited, `1` image per day|
 | [theoldllm.vercel.app](https://theoldllm.vercel.app/) | Unknown | Unknown |
-
 
 
 
@@ -127,7 +122,7 @@
 | [uncloseai.com](https://uncloseai.com/) |`Hermes AI`, `Qwen 3 Coder`, `TTS Speech`|Unlimited, OpenAI-compatible API|
 | [github/ollamafreeapi](https://github.com/mfoud444/ollamafreeapi/) |`Too many to list..`|Unknown|
 | [ollama.com](https://ollama.com) |`Too many to list..`|Unlimited run on cloud or local machine|
-| [g4f.dev](https://g4f.dev/docs/ready_to_use.html) | `qroq`, `ollama`, `pollinations.ai`, `nvidia`, `grok`, `gemini`, `gpt-oss-120b` (requires g4f.dev [Api Key](https://g4f.dev/api_key.html) Just type a random `userId`) | Unlimited|
+| [g4f.dev](https://g4f.dev/docs/ready_to_use.html) | `qroq`, `ollama`, `pollinations.ai`, `nvidia`, `grok`, `gemini`, `gpt-oss-120b` (requires g4f.dev [Api Key](https://g4f.dev/api_key.html) Jus[...]
 
 ---
 
@@ -136,15 +131,17 @@
 ### Chat Interfaces
 | Link | Free Models | Limits |
 | --- | --- | --- |
+| [meta.ai](https://www.meta.ai) | `Llama 4` |`Unlimited/Unkown`|
+| [groq.com](https://groq.com) |`15+`| `30 requests` / min, `40 000 tokens` / min|
 | [yupp.ai](https://yupp.ai/) | Too many to list.. | Unlimited, as long as Credits are maintained, earned through feedback on AI Usage `(randomized variable response earnings)`|
-| [lobechat.com](https://lobechat.com/) |`gemini-2.5-pro`, `gemini-2.5-flash`, `gemini-2.0-flash-exp-image-generation`, `deepseek-chat`, `deepseek-reasoner`, `kimi-k2-0711-preview`, `gpt-4.1-nano`, `gpt-4o-mini`, `gpt-4o`, `gpt-4-turbo`, `claude-3-5-haiku-latest`, `gpt-4.1`, `gpt-4.1-mini`, `chatgpt-4o-latest`, `o3`, `o4-mini`, `claude-sonnet-4-latest`, `claude-3-7-sonnet-latest`, `claude-opus-4-latest`| `500,000 Tokens` Free resets every 30 days|
+| [lobechat.com](https://lobechat.com/) |`gemini-2.5-pro`, `gemini-2.5-flash`, `gemini-2.0-flash-exp-image-generation`, `deepseek-chat`, `deepseek-reasoner`, `kimi-k2-0711-preview`, `gpt-4.1-nano[...]
 | [poe.com](https://poe.com) |`Too many to list..`|`3,000 tokens` resets every 24h|
-| [origin.eqing.tech](https://origin.eqing.tech/), Backup [site.eqing.tech](https://site.eqing.tech/) |`gpt-4o-mini`, `gpt-4o-mini-image-free`, `gpt-4o-free`, `grok-3-free`, `gemini-2.0-flash-free`, `gemini-2.5-flash-free`, `gpt-4o-research-free`, `gpt-4o-all`, `gpt-4o-image`, `o4-mini`, `deepseek-v3-250324`, `claude-3.7-sonnet`, `grok-3`, `deepseek-r1-250528`, `grok-3-reasoner`, `grok-3-deepsearch`, `claude-4-sonnet`, `gemini-2.5-pro-preview-06-05`, `gpt-4o`, `gpt-4.1`, `gpt-4-5`, `o3`, `o4-mini-high`, `stable-diffusion-xl`|Unlimited|
+| [origin.eqing.tech](https://origin.eqing.tech/), Backup [site.eqing.tech](https://site.eqing.tech/) |`gpt-4o-mini`, `gpt-4o-mini-image-free`, `gpt-4o-free`, `grok-3-free`, `gemini-2.0-flash-fre[...]
 | [huggingface.co](https://huggingface.co/spaces) | Too many to list.. | Unlimited, User Generated Content|
 | [claude.ai](https://claude.ai) | `claude-sonnet-4.5`, `claude-haiku-4.5` | Usage limit Depending on Demand, resets every 5 hours|
-| [writesonic.com](https://writesonic.com/chat) | `claude-sonnet-3.5`, `gpt-4o`, `claude-opus`, `claude-3-haiku`, `gpt-4o-mini` | Only available to 150+ Contries, `10,000 premium credits` per month, `25-50 credits` one time|
+| [writesonic.com](https://writesonic.com/chat) | `claude-sonnet-3.5`, `gpt-4o`, `claude-opus`, `claude-3-haiku`, `gpt-4o-mini` | Only available to 150+ Contries, `10,000 premium credits` per mon[...]
 | [character.ai](https://character.ai) | `char.ai`| Unlimited, But with wait times, slower response speeds, and the presence of pop-up ads |
-| [gemini.google.com](https://gemini.google.com) | `gemini-3-fast`, `gemini-3-thinking`, `gemini-3-nano-banana-standard`| `128,000 tokens`, `100 images` per day, `5 reports` per month (fast), `20 audio overviews` per day, `10 files` (`100 MB` file size, `2 GB` for videos) |
+| [gemini.google.com](https://gemini.google.com) | `gemini-3-fast`, `gemini-3-thinking`, `gemini-3-nano-banana-standard`| `128,000 tokens`, `100 images` per day, `5 reports` per month (fast), `20[...]
 | [copilot.microsoft.com](https://copilot.microsoft.com) | `gpt-5.1` | Unlimited, 1 image per day, with Deep Research enabled and `10+ Group Chats`|
 | [chat.deepseek.com](https://chat.deepseek.com) | `deepseek-v3.2`, `deepseek-r1`, `deepseek-coder-v2` | `20k-30k tokens`, Politically Biased |
 
@@ -154,7 +151,7 @@
 | --- | --- | --- |
 | [bing.com](https://www.bing.com/images/create) | `dall-e-3`, `mai-image-1`, `gpt-4o`| Unlimited |
 | [designer.microsoft.com](https://designer.microsoft.com) | `dall-e-3`| `15-16 montlhy credits`, For Non-Comercial/Personal Use Only|
-| [leonardo.ai](https://leonardo.ai) | `leonardo-pheonix`, `leonardo-vision-xl`, `leonardo-diffusion-xl`, `leonardo-lighting-xl`, `leonardo-kino-xl`, `leonardo-anime-xl`, `lucid-origin`, `lucid-realism`, `motion-1.0`, `motion-2.0`, `veo-3`, `veo-3.1`, `gpt-image-1`, `flux.1`, `kontext`, `flux-kontext-max`, `ideogram-3.0`, `sora-2`, `sora-2-pro`, `kling-2.5-turbo`, `kling-2.1-pro` and other Community Trained Models| `150 fast tokens` per day, Leonardo has rights to your output |
+| [leonardo.ai](https://leonardo.ai) | `leonardo-pheonix`, `leonardo-vision-xl`, `leonardo-diffusion-xl`, `leonardo-lighting-xl`, `leonardo-kino-xl`, `leonardo-anime-xl`, `lucid-origin`, `lucid-r[...]
 | [firefly.adobe.com](https://firefly.adobe.com) | `firefly-image-model-5`, `firefly-video-model`, and other pro models| 25 credits one time|
 | [pika.art](https://pika.art) | `pika-1.5`, `pika-2.5` | `80 credits` per month (5-8 images per month), with Watermark|
 | [suno.com](https://suno.com) | `suno-v4.5-all` | `50 credits` per day (10 Songs per day) |
@@ -175,7 +172,7 @@
 ### AI IDEs
 | Link | Free Models | Limits |
 | --- | --- | --- |
-| [Rovo Dev Agents](https://www.atlassian.com/software/rovo-dev) |`claude sonnet 4`, `claude opus 4` because of beta program |20 M Claude‑4 Sonnet tokens / day|
+| [Rovo Dev Agents](https://www.atlassian.com/software/rovo-dev) |`claude sonnet 4`, `claude opus 4` because of beta program |20 M Claude‑4 Sonnet tokens / day|
 | [kiro.dev](https://kiro.dev) |`Gemini 2.5 flash/pro`||
 
 ### Developer APIs & Platforms
@@ -194,8 +191,8 @@
 | [ibm.com](https://www.ibm.com/products/watsonx-ai) | | |
 | [huggingface.co](https://huggingface.co/models) | | |
 | [ai-sdk.dev](https://ai-sdk.dev) | | |
-| [pollinations.ai](https://pollinations.ai/) |**Text:** `amazon-nova-micro`, `gemini-2.5-flash-lite`, `mistral`, `qwen-coder`, `openai`, `openai-fast`, `openai-large`, `gemini-3-flash`, `deepseek-v3`, `claude-haiku-4.5`, `claude-sonnet-4.5`, `claude-opus-4.5`, `perplexity-sonar`, `kimi-k2-thinking`, `glm-4.7`, `minimax-m2.1` **Image:** `flux`, `zimage`, `turbo`, `gptimage`, `kontext`, `seedream`, `nanobanana`, `nanobanana-pro` **Video:** `seedance`, `veo`|1-20 pollen/day free (tier-based).
-| [llm7.io](https://llm7.io/) |`bidara`, `codestral-2405`, `codestral-2501`, `deepseek-r1-0528`, `elixposearch`, `gpt-4.1-nano-2025-04-14`, `gpt-4o-mini-2024-07-18`, `gpt-o3-2025-04-16`, `grok-3-mini-high`, `llama-3.1-8b-instruct-fp8`, `llama-4-scout-17b-16e-instruct`, `llama-fast-roblox`, `mistral-3b-2410`, `mistral-8b-2410`, `mirexa`, `mistral-large-2402`, `mistral-large-2407`, `mistral-large-2411`, `mistral-medium`, `mistral-nemo-roblox`, `mistral-saba-2502`, `mistral-small-2402`, `mistral-small-2409`, `mistral-small-2501`, `mistral-small-2503`, `mistral-small-3.1-24b`, `mistral-small-3.1-24b-instruct-2503`, `open-mistral-7b`, `open-mistral-nemo`, `open-mixtral-8x22b`, `open-mixtral-8x7b`, `phi-4-multimodal-instruct`, `pixtral-12b-2409`, `pixtral-large-2411`, `qwen2.5-coder-32b-instruct`, `rtist`|Max rate 150 per min |
+| [pollinations.ai](https://pollinations.ai/) |**Text:** `amazon-nova-micro`, `gemini-2.5-flash-lite`, `mistral`, `qwen-coder`, `openai`, `openai-fast`, `openai-large`, `gemini-3-flash`, `deepsee[...]
+| [llm7.io](https://llm7.io/) |`bidara`, `codestral-2405`, `codestral-2501`, `deepseek-r1-0528`, `elixposearch`, `gpt-4.1-nano-2025-04-14`, `gpt-4o-mini-2024-07-18`, `gpt-o3-2025-04-16`, `grok-3-[...]
 | [developer.puter.com](https://developer.puter.com/tutorials/free-unlimited-ai-api/) also [introduction](https://docs.puter.com/introduction/)|Too many to list..|None usage is account based|
 
 ---
