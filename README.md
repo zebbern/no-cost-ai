@@ -78,6 +78,7 @@
 | [grok.com](https://grok.com/chat) |`Grok 3` | `3 messages` every 2 h|
 | [flowgpt.com](https://flowgpt.com/) | `Many community made gpts free to use`|Should be Unlimited|
 | [pi.ai](https://pi.ai) |`Large Language Model called Inflection-2.5` | Unlimited |
+| [wsupai.app](https://wsupai.app/) | `AI character chat` | Unlimited, no sign up, SFW only |
 | [sur.pollinations.ai](https://sur.pollinations.ai/) |`openai`, `sur`, `sur-mistral`, `claude`, `mistral`, `mistral-large`, `command-r`, `unity`, `rtist`, `searchgpt`| Unlimited|
 | [heck.ai](https://heck.ai) |``deepseek-v3`, `deepseek-r1-pro`, `gemini-2.5-flash`, `chatgpt-4o-mini`, `chatgpt-4.1-mini`, `grok-3-mini`, `llama-4-scout`` | `50 query`/day, `5 Search` query/day, [...]
 | [freegpt.es](https://freegpt.es/) |  `gpt-4o`, `DeepSeek`, `Grok`, `Gemini` etc.. | `50 requests` per day or more |
