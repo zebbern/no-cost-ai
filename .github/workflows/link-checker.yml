@@ -44,6 +44,7 @@ jobs:
             this.successfulLinks = [];
             this.timeoutLinks = [];
             this.redirectLoopLinks = []; // For redirect issues
+            this.certificateWarningLinks = []; // For TLS certificate validation issues
             this.totalChecked = 0;
             
             // User agents to rotate through
@@ -58,6 +59,22 @@ jobs:
           isHeaderOverflowError(error) {
             return error.code === 'HPE_HEADER_OVERFLOW'
               || (typeof error.message === 'string' && /header overflow/i.test(error.message));
+          }
+
+          isTlsCertificateError(error) {
+            const certificateErrorCodes = [
+              'CERT_HAS_EXPIRED',
+              'CERT_NOT_YET_VALID',
+              'DEPTH_ZERO_SELF_SIGNED_CERT',
+              'SELF_SIGNED_CERT_IN_CHAIN',
+              'UNABLE_TO_VERIFY_LEAF_SIGNATURE',
+              'UNABLE_TO_GET_ISSUER_CERT_LOCALLY',
+              'ERR_TLS_CERT_ALTNAME_INVALID'
+            ];
+
+            return certificateErrorCodes.includes(error.code)
+              || (typeof error.message === 'string'
+                && /(certificate|self signed|unable to verify the first certificate|hostname\/ip does not match certificate)/i.test(error.message));
           }
         
           async checkLink(url, maxRetries = 2) {
@@ -128,6 +145,9 @@ jobs:
                   } else if (error.message.includes('Maximum redirect') || error.message.includes('too many redirects')) {
                     this.redirectLoopLinks.push(errorInfo);
                     console.log(`🔄 ${url} - Redirect loop detected`);
+                  } else if (this.isTlsCertificateError(error)) {
+                    this.certificateWarningLinks.push(errorInfo);
+                    console.log(`🛡️ ${url} - TLS certificate warning: ${error.message}`);
                   } else {
                     // Network errors, DNS failures, connection refused, etc.
                     this.brokenLinks.push(errorInfo);
@@ -185,10 +205,12 @@ jobs:
                 totalChecked: this.totalChecked,
                 successful: this.successfulLinks.length,
                 broken: this.brokenLinks.length,
+                certificateWarnings: this.certificateWarningLinks.length,
                 timeout: this.timeoutLinks.length,
                 redirectLoops: this.redirectLoopLinks.length
               },
               brokenLinks: this.brokenLinks,
+              certificateWarningLinks: this.certificateWarningLinks,
               timeoutLinks: this.timeoutLinks,
               redirectLoopLinks: this.redirectLoopLinks,
               successfulLinks: this.successfulLinks
@@ -202,12 +224,13 @@ jobs:
             console.log(`Total links checked: ${this.totalChecked}`);
             console.log(`✅ Working (including 403/500): ${this.successfulLinks.length}`);
             console.log(`❌ Unreachable/Broken: ${this.brokenLinks.length}`);
+            console.log(`🛡️ TLS certificate warnings: ${this.certificateWarningLinks.length}`);
             console.log(`⏱️ Timeout: ${this.timeoutLinks.length}`);
             console.log(`🔄 Redirect loops: ${this.redirectLoopLinks.length}`);
             
             // Only treat truly unreachable links as critical issues
             const criticalIssues = this.brokenLinks.length;
-            const warningIssues = this.timeoutLinks.length + this.redirectLoopLinks.length;
+            const warningIssues = this.certificateWarningLinks.length + this.timeoutLinks.length + this.redirectLoopLinks.length;
             
             if (this.brokenLinks.length > 0) {
               console.log('\n=== UNREACHABLE LINKS (CRITICAL) ===');
@@ -220,6 +243,13 @@ jobs:
               console.log('\n=== TIMEOUT LINKS (WARNING) ===');
               this.timeoutLinks.forEach(link => {
                 console.log(`⏱️ ${link.url} - ${link.error} (Status: ${link.status})`);
+              });
+            }
+
+            if (this.certificateWarningLinks.length > 0) {
+              console.log('\n=== TLS CERTIFICATE WARNINGS ===');
+              this.certificateWarningLinks.forEach(link => {
+                console.log(`🛡️ ${link.url} - ${link.error} (Status: ${link.status})`);
               });
             }
             
@@ -267,6 +297,7 @@ jobs:
           issueBody += `- 📊 Total links checked: ${report.summary.totalChecked}\n`;
           issueBody += `- ✅ Working (including 403/500): ${report.summary.successful}\n`;
           issueBody += `- ❌ **Unreachable/Broken: ${report.summary.broken}**\n`;
+          issueBody += `- 🛡️ TLS certificate warnings: ${report.summary.certificateWarnings}\n`;
           issueBody += `- ⏱️ Timeout: ${report.summary.timeout}\n`;
           issueBody += `- 🔄 Redirect loops: ${report.summary.redirectLoops}\n\n`;
           
@@ -285,6 +316,16 @@ jobs:
             issueBody += `These links timed out (might be temporary):\n\n`;
             report.timeoutLinks.forEach(link => {
               issueBody += `- ⏱️ [${link.url}](${link.url})\n`;
+              issueBody += `  - **Issue:** ${link.error}\n`;
+              issueBody += `  - **Status:** ${link.status}\n\n`;
+            });
+          }
+
+          if (report.certificateWarningLinks.length > 0) {
+            issueBody += `## 🛡️ Warning: TLS Certificate Issues\n\n`;
+            issueBody += `These links responded, but their TLS certificates could not be validated by the runner:\n\n`;
+            report.certificateWarningLinks.forEach(link => {
+              issueBody += `- 🛡️ [${link.url}](${link.url})\n`;
               issueBody += `  - **Issue:** ${link.error}\n`;
               issueBody += `  - **Status:** ${link.status}\n\n`;
             });
@@ -339,5 +380,5 @@ jobs:
       run: |
         echo "🎉 No unreachable links found!"
         echo "✅ All links are working (including those with 403/500 status codes)"
-        echo "⚠️ Warnings: ${{ steps.check-links.outputs.warning_count }} (timeouts/redirects - might be temporary)"
+        echo "⚠️ Warnings: ${{ steps.check-links.outputs.warning_count }} (TLS certificate issues, timeouts, or redirects)"
         echo "📊 Full report available in artifacts."
