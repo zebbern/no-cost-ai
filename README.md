@@ -81,7 +81,7 @@
 | [wsupai.app](https://wsupai.app/) | `AI character chat` | Unlimited, no sign up, SFW only |
 | [sur.pollinations.ai](https://sur.pollinations.ai/) |`openai`, `sur`, `sur-mistral`, `claude`, `mistral`, `mistral-large`, `command-r`, `unity`, `rtist`, `searchgpt`| Unlimited|
 | [heck.ai](https://heck.ai) |``deepseek-v3`, `deepseek-r1-pro`, `gemini-2.5-flash`, `chatgpt-4o-mini`, `chatgpt-4.1-mini`, `grok-3-mini`, `llama-4-scout`` | `50 query`/day, `5 Search` query/day, [...]
-| [freegpt.es](https://freegpt.es/) |  `gpt-4o`, `DeepSeek`, `Grok`, `Gemini` etc.. | `50 requests` per day or more |
+| `freegpt.es` *(currently unreachable)* | Previously offered `gpt-4o`, `DeepSeek`, `Grok`, `Gemini` etc.. | Previously `50 requests` per day or more |
 | [chat2.free2gpt.com](https://chat2.free2gpt.com/) | `Gemini` | Allow Alot of requests |
 | [chat4.free2gpt.com](https://chat4.free2gpt.com/) | `gpt-4o-mini`, `wbot-t1-mini`, `wbot-4-347b`, `deepseek-chat`, `deepseek-coder`, `ds-r1-distill-70b`, `wbot-2`, `wbot-2-friend`, `wbot-2-cat-v[...]
 | [free.netfly.top](https://free.netfly.top/) | `GPT-40-mini` |Unlimited|
