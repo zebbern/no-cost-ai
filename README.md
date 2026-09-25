@@ -195,6 +195,7 @@
 | [llm7.io](https://llm7.io/) |`bidara`, `codestral-2405`, `codestral-2501`, `deepseek-r1-0528`, `elixposearch`, `gpt-4.1-nano-2025-04-14`, `gpt-4o-mini-2024-07-18`, `gpt-o3-2025-04-16`, `grok-3-[...]
 | [anyapi.ai](https://anyapi.ai) | `meta-llama/llama-3.3-70b-instruct`, `qwen/qwen3-coder`, `qwen/qwq-32b`, `google/gemma-4-it`, `nvidia/nemotron-3-super`, `mistralai/mistral-small-3.1`, `deepseek/deepseek-chat`, `cohere/north-mini-code`, `liquid/lfm-2.5`, `openai/gpt-oss-120b` and many more open-source models via API key | 20 req/min, 200 req/day, no credit card required |
 | [developer.puter.com](https://developer.puter.com/tutorials/free-unlimited-ai-api/) also [introduction](https://docs.puter.com/introduction/)|Too many to list..|None usage is account based|
+| [onomeo.com](https://onomeo.com) | 48 models behind one OpenAI-compatible key, e.g. `deepseek-v4-flash`, `glm-5.2`, `gemini-3.8-flash`, `stealth/space-bunny-alpha`; `claude-opus-5.5`, `gpt-6-sol`, `grok-4.7` share a 50k credits/day cap | Daily check-in credits (50k on day 1, up to 200k/day after 7 days in a row), 12 req/min, 60 req per 5h, no credit card. Public beta; some free upstreams may train on prompts |
 
 ---
 
