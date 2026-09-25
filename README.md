@@ -186,6 +186,7 @@
 | [www.anthropic.com/api](https://www.anthropic.com/api) | | |
 | [platform.openai.com](https://platform.openai.com) | | |
 | [openrouter.ai](https://openrouter.ai/docs) | | |
+| [requesty.ai](https://www.requesty.ai/free-models) | `nvidia/nemotron-3-super-120b-a12b`, `google/gemma-4-31b-it`, `mistral/leanstral-1-5` and other free models via API key | 200 req/day, no credit card required |
 | [developers.cloudflare.com](https://developers.cloudflare.com/workers-ai) | | |
 | [fireworks.ai](https://fireworks.ai) | | |
 | [ibm.com](https://www.ibm.com/products/watsonx-ai) | | |
