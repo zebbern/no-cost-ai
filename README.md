@@ -160,6 +160,7 @@
 | [app.pixverse.ai](https://app.pixverse.ai) | PixVerse video | 50-60 per day, 540p or 750p output, with Watermark |
 | [ideogram.ai](https://ideogram.ai) | `ideogram-3.0`, `ideogram-3.0-turbo` | 10 credits per week (40 images per week), with Watermark |
 | [genmo.ai](https://www.genmo.ai) | `mochi-1` | 50 credits per month, with Watermark |
+| [kdpbook.io](https://kdpbook.io) | AI book generator (text, illustrations, KDP print layout) | `2,000 credits` one time (about one 32-page picture book), with Watermark, exports not for sale |
 
 ### Voice & Music
 | Link | Free Models | Limits |
