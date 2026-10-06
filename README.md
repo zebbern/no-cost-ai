@@ -195,6 +195,7 @@
 | [llm7.io](https://llm7.io/) |`bidara`, `codestral-2405`, `codestral-2501`, `deepseek-r1-0528`, `elixposearch`, `gpt-4.1-nano-2025-04-14`, `gpt-4o-mini-2024-07-18`, `gpt-o3-2025-04-16`, `grok-3-[...]
 | [anyapi.ai](https://anyapi.ai) | `meta-llama/llama-3.3-70b-instruct`, `qwen/qwen3-coder`, `qwen/qwq-32b`, `google/gemma-4-it`, `nvidia/nemotron-3-super`, `mistralai/mistral-small-3.1`, `deepseek/deepseek-chat`, `cohere/north-mini-code`, `liquid/lfm-2.5`, `openai/gpt-oss-120b` and many more open-source models via API key | 20 req/min, 200 req/day, no credit card required |
 | [developer.puter.com](https://developer.puter.com/tutorials/free-unlimited-ai-api/) also [introduction](https://docs.puter.com/introduction/)|Too many to list..|None usage is account based|
+| [onomeo.com](https://onomeo.com) | About 30 free models behind one OpenAI-compatible key, e.g. `deepseek-v4-flash`, `glm-5.2`, `gemini-3.7-flash`, `openai/gpt-oss-20b`; big models (`claude-opus-5.5`, `gpt-6-sol`, etc.) and a DeepSeek coding line are pay as you go | Free models: 12 req/min per key, 30 calls per 5h per account (90 for 35 days after a payment), plus a site-wide shared pool that can run out at busy times. No credit card for free models; paying is optional (top up from US$5). Public beta: not every feature is guaranteed to work; we are collecting feedback and welcome it. Many upstreams may train on prompts |
 
 ---
 
