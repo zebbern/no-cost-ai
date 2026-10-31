@@ -168,6 +168,7 @@
 | [stableaudio.com](https://stableaudio.com) | Stable Audio Open | Short clips, monthly cap |
 | [riffusion.com](https://www.riffusion.com) | Riffusion music | Limited generations |
 | [uberduck.ai](https://www.uberduck.ai) | Uberduck TTS | Credit based |
+| [terastudio.co](https://terastudio.co) | Singing-voice cloning (sings songs in your own voice) | 2 full songs per account, up to 4 min each |
 
 ### AI IDEs
 | Link | Free Models | Limits |
