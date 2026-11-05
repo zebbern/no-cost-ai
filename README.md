@@ -158,6 +158,7 @@
 | [www.udio.com](https://www.udio.com) | Udio music models | `10 credits` per day (3-5 songs per day) |
 | [krea.ai](https://www.krea.ai) | `krea-1`, `flux.1-krea`, and other SD/Flux based models | 50 generations per day, with Watermark |
 | [app.pixverse.ai](https://app.pixverse.ai) | PixVerse video | 50-60 per day, 540p or 750p output, with Watermark |
+| [refvid.com](https://refvid.com/free-ai-video-generator) | `kling-3.0-omni` reference-to-video: every clip made from 1-10 of your own photos | `1 video` one time (5 s, 720p by default) + 5 images, No Watermark, commercial use allowed |
 | [ideogram.ai](https://ideogram.ai) | `ideogram-3.0`, `ideogram-3.0-turbo` | 10 credits per week (40 images per week), with Watermark |
 | [genmo.ai](https://www.genmo.ai) | `mochi-1` | 50 credits per month, with Watermark |
 
