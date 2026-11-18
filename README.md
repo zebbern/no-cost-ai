@@ -90,6 +90,7 @@
 | [gemini.google.com](https://gemini.google.com) | `gemini-2.5-fast` | `32,000 tokens`, `5-10 prompts` per day, No Image-File-Audio-Generation |
 | [copilot.microsoft.com](https://copilot.microsoft.com) | `gpt-5` | Unlimited, `1` image per day|
 | [theoldllm.vercel.app](https://theoldllm.vercel.app/) | Unknown | Unknown |
+| [uberllm.dev/uncensored-ai-chat](https://uberllm.dev/uncensored-ai-chat) | `DeepSeek V4.1 Flash Uncensored` | `12 messages` per day, no sign up, text only, 18+ |
 
 
 
