@@ -178,18 +178,18 @@
 ### Developer APIs & Platforms
 | Link | Free Models | Limits |
 | --- | --- | --- |
-| [console.groq.com](https://console.groq.com/playground) | | |
-| [ai.google.dev](https://ai.google.dev) | | |
+| [console.groq.com](https://console.groq.com/playground) | `openai/gpt-oss-120b`, `openai/gpt-oss-20b`, `qwen/qwen3.8-27b` | 30 RPM, 1,000 RPD, 8K TPM, 200K TPD (Free Plan) |
+| [ai.google.dev](https://ai.google.dev) | `gemini-4-hydrogen`, `gemini-3.8-flash`, `gemini-3.5-flash-lite` | Free tier available (No credit card required; per-project RPM/TPM/RPD shown in AI Studio) |
 | [platform.deepseek.com](https://platform.deepseek.com) | | |
 | [www.together.ai](https://www.together.ai) | | |
 | [replicate.com](https://replicate.com) | | |
 | [www.anthropic.com/api](https://www.anthropic.com/api) | | |
 | [platform.openai.com](https://platform.openai.com) | | |
-| [openrouter.ai](https://openrouter.ai/docs) | | |
-| [developers.cloudflare.com](https://developers.cloudflare.com/workers-ai) | | |
+| [openrouter.ai](https://openrouter.ai/docs) | `:free` models (e.g., `google/gemma-4-31b-it:free`, `nvidia/nemotron-3-ultra-550b-a55b:free`, `baidu/ernie-5.5-flash-preview:free`) | 20 RPM, 50 RPD (<10 credits purchased all time) or 1,000 RPD (>= 10 credits purchased all time) |
+| [developers.cloudflare.com](https://developers.cloudflare.com/workers-ai) | `@cf/meta/llama-3.3-70b-instruct-fp8-fast`, `@cf/qwen/qwen2.5-coder-32b-instruct`, `@cf/deepseek-ai/deepseek-r1-distill-qwen-32b` | 10,000 Neurons/day on Workers Free (resets 00:00 UTC) |
 | [fireworks.ai](https://fireworks.ai) | | |
 | [ibm.com](https://www.ibm.com/products/watsonx-ai) | | |
-| [huggingface.co](https://huggingface.co/models) | | |
+| [huggingface.co](https://huggingface.co/models) | Inference Providers (No longer free) | No monthly free credits; requires prepaid credits or PRO ($9/month, includes $2/mo credits) |
 | [ai-sdk.dev](https://ai-sdk.dev) | | |
 | [pollinations.ai](https://pollinations.ai/) |**Text:** `amazon-nova-micro`, `gemini-2.5-flash-lite`, `mistral`, `qwen-coder`, `openai`, `openai-fast`, `openai-large`, `gemini-3-flash`, `deepsee[...]
 | [llm7.io](https://llm7.io/) |`bidara`, `codestral-2405`, `codestral-2501`, `deepseek-r1-0528`, `elixposearch`, `gpt-4.1-nano-2025-04-14`, `gpt-4o-mini-2024-07-18`, `gpt-o3-2025-04-16`, `grok-3-[...]
